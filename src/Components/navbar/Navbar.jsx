@@ -7,8 +7,11 @@ import { useState, React } from 'react';
 
 function clicEvento (e){
   e.preventDefault();
-  console.log(e.target[0].value);
-  console.log(e.target[1].value);
+  let email = e.target[0].value;
+  let mensaje = e.target[1].value;
+
+  console.log(email);
+  console.log(mensaje);
 }
 
 

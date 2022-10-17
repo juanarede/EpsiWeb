@@ -18,7 +18,7 @@ class Message extends Database
 
     public function save()
     {
-        $query = $this->connect()->prepare("INSERT INTO mensajes(uuid, email,mensaje) VALUES(:uuid, :email, :mensaje)");
+        $query = $this->connect()->prepare("INSERT INTO msg (uuid, email,mensaje) VALUES(:uuid, :email, :mensaje)");
 
         $query->execute(['email'=>$this->email, 'uuid'=>$this->uuid,'mensaje'=>$this->mensaje]);
     }
