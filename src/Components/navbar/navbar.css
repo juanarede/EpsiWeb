@@ -1,0 +1,14 @@
+.logonav{
+    width: 10rem;
+}
+.nav-item{
+    color: #ffff;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.navbar-toggler{
+    color: #ffff;
+}
+.nav-link{
+    color: #ffff;
+}
