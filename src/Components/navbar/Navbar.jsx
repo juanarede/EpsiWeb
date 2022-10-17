@@ -45,10 +45,12 @@ const changeBackground = () => {
             Menu
             <i className="bi-list"></i>
         </button>
+        
         <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul  className=" navbar-nav ms-auto me-4 my-3 my-lg-0">
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#features">Our Service</a></li>
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#download">About Us</a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3" href="#">Let's talk</a></li>
             </ul>
            
         </div>

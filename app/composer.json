@@ -1,0 +1,15 @@
+{
+    "name": "eduar/app",
+    "autoload": {
+        "psr-4": {
+            "Eduar\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "loadEdar",
+            "email": "eduardo.arede@gmail.com"
+        }
+    ],
+    "require": {}
+}
