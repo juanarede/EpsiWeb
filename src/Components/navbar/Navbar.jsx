@@ -5,7 +5,11 @@ import './navbar.css'
 import { useState, React } from 'react';
 
 
-
+function clicEvento (e){
+  e.preventDefault();
+  console.log(e.target[0].value);
+  console.log(e.target[1].value);
+}
 
 
 function Navbar() {
@@ -58,16 +62,17 @@ const changeBackground = () => {
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Messages</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className='modal-body'>
-       <form action="" method='POST'>
+       <form onSubmit={clicEvento}>
         <div className='mb-3'>
-          <input className='form-control' type="email" id='email' name="email" placeholder='Email' />
+          <input className='form-control' type="email" id='email' name="email"  placeholder='Email' />
           <textarea className='form-control' name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
           <input className='btn' type="submit" value="Send Message" name='btn-enviar'/>
         </div>
        </form>
+       
       </div>
     </div>
   </div>
@@ -77,7 +82,12 @@ const changeBackground = () => {
     </div>
 
 </AppBar>
+
   )
+  
 }
 
-export default Navbar
+export default Navbar 
+
+
+          
