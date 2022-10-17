@@ -59,7 +59,7 @@ function MainSection() {
                     </div>
                     <div className="col-lg-4 col-xs-12 order-lg-0">
                        
-                    <img className='phone-main' src={phone} alt=""/>
+                    <img className='phone-main img-fluid' src={phone} alt=""/>
                         
                     </div>
                 </div>

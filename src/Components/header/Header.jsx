@@ -10,7 +10,7 @@ function Header() {
           <div className="col-lg-6 title-header">
             <div className="mb-5 mb-lg-0 text-center text-lg-start title-z">
               <h1 className="display-1 lh-1 mb-3">Lorem Ipsum is simply .</h1>
-              <p   className="lead fw-normal text-muted mb-5" >
+              <p   className="lead fw-normal  mb-5" >
                 Lorem Ipsum is simply dummy text of the printing and Lorem Lorem
                 Ipsum is simply dummy text of the printing and
               </p>
