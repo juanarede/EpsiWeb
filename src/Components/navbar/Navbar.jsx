@@ -3,17 +3,26 @@ import { AppBar } from '@mui/material';
 import logoWithe from '../../assets/img/logowithe.png'
 import './navbar.css'
 import { useState, React } from 'react';
+import axios from "axios";
 
 
-function clicEvento (e){
+//Envio de Formulario//
+const clicEvento= async (e)=>{
   e.preventDefault();
-  let email = e.target[0].value;
-  let mensaje = e.target[1].value;
+  let email = e.target[0].value
+  let mensaje = e.target[1].value
+  
+ 
+  
+  
+ axios.post("http://localhost/epsiweb/app/src/controller/MessageController.php", {
+     email: email,
+     mensaje: mensaje
+ }
 
-  console.log(email);
-  console.log(mensaje);
+  ).then(res=>console.log(res));
 }
-
+////////////////////////////////
 
 function Navbar() {
 
