@@ -2,27 +2,11 @@ import { AppBar } from '@mui/material';
 
 import logoWithe from '../../assets/img/logowithe.png'
 import './navbar.css'
-import { useState, React } from 'react';
-import axios from "axios";
+import { useState, React, useRef } from 'react';
 
 
-//Envio de Formulario//
-const clicEvento= async (e)=>{
-  e.preventDefault();
-  let email = e.target[0].value
-  let mensaje = e.target[1].value
-  
- 
-  
-  
- axios.post("http://localhost/epsiweb/app/src/controller/MessageController.php", {
-     email: email,
-     mensaje: mensaje
- }
 
-  ).then(res=>console.log(res));
-}
-////////////////////////////////
+
 
 function Navbar() {
 
@@ -69,26 +53,7 @@ const changeBackground = () => {
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Let's talk</a></li>
             </ul>
             
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Messages</h1>
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div className='modal-body'>
-       <form onSubmit={clicEvento}>
-        <div className='mb-3'>
-          <input className='form-control' type="email" id='email' name="email"  placeholder='Email' />
-          <textarea className='form-control' name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-          <input className='btn' type="submit" value="Send Message" name='btn-enviar'/>
-        </div>
-       </form>
-       
-      </div>
-    </div>
-  </div>
-</div>
+
 
         </div>
     </div>
