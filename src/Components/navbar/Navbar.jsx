@@ -3,6 +3,7 @@ import { AppBar } from '@mui/material';
 import logoWithe from '../../assets/img/logowithe.png'
 import './navbar.css'
 import { useState, React, useRef } from 'react';
+import Message from "../messages/Messages";
 
 
 
@@ -52,7 +53,7 @@ const changeBackground = () => {
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#download">About Us</a></li>
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Let's talk</a></li>
             </ul>
-            
+            <Message/>
 
 
         </div>
