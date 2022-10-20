@@ -33,20 +33,20 @@ export default function Message (props){
   
   
   const data = {
-    email: refEmail.current.value,
-    mensaje: refMensaje.current.value
+    "email": refEmail.current.value,
+    "mensaje": refMensaje.current.value
   }
   const jsonData = JSON.stringify(data);
 
   const URL_SERVER = "http://localhost/api/index.php/";
   
-  fetch(URL_SERVER,{
+ const resp = fetch(URL_SERVER,{
     method: 'POST',
     body:jsonData,
     headers: {"Content-Type":"application/json"}
   })
     .then(res=>console.log(res));
-  
+  console.log(resp);
 
  }
 
