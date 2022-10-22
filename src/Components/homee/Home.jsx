@@ -13,6 +13,7 @@ import "aos/dist/aos.css"
 
 function Home() {
 
+
   useEffect(() => {
      Aos.init({duration: 2000})
   

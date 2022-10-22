@@ -6,8 +6,10 @@ import Navbar from "../navbar/Navbar";
 
 
 import whatsappicon from "../../assets/img/whatsappicon.png";
-
+     
 function UserMain() {
+
+
   return (
     <>
       <Navbar />

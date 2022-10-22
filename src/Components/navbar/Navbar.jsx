@@ -51,7 +51,8 @@ const changeBackground = () => {
             <ul  className=" navbar-nav ms-auto me-4 my-3 my-lg-0">
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#features">Our Service</a></li>
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#download">About Us</a></li>
-                <li  className="nav-item"><a class="nav-link me-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Let's talk</a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3" href="http://localhost/app/src/views/message-send.php" >Let's talk</a></li>
+                
             </ul>
             <Message/>
 
