@@ -2,7 +2,7 @@ import { AppBar } from '@mui/material';
 
 import logoWithe from '../../assets/img/logowithe.png'
 import './navbar.css'
-import { useState, React, useRef } from 'react';
+import { useState, React } from 'react';
 
 
 
