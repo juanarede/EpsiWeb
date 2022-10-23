@@ -20,7 +20,7 @@ function ContactUs() {
                         <br />
                         No hay problema...
                     </h2>
-                    <a className="btn btn-outline-light py-3 px-4 rounded-pill" href="" target="_blank">Contact Us</a>
+                    <a className="btn btn-outline-light py-3 px-4 rounded-pill" href="http://localhost/server/message-box.php" target="_blank">Contact Us</a>
                 </div>
             </div>
         </section>
