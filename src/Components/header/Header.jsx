@@ -9,10 +9,9 @@ function Header() {
         <div className="row gx-5 align-items-center">
           <div className="col-lg-6 title-header">
             <div className="mb-5 mb-lg-0 text-center text-lg-start title-z">
-              <h1 className="display-1 lh-1 mb-3">Lorem Ipsum is simply .</h1>
+              <h1 className="display-1 lh-1 mb-3">Te ayudamos a crear tus ideas</h1>
               <p   className="lead fw-normal  mb-5" >
-                Lorem Ipsum is simply dummy text of the printing and Lorem Lorem
-                Ipsum is simply dummy text of the printing and
+                Ofrecemos soluciones adaptables para ubicar tu emprendimiento dentro del mundo digital
               </p>
             </div>
           </div>

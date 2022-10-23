@@ -3,7 +3,7 @@ import { AppBar } from '@mui/material';
 import logoWithe from '../../assets/img/logowithe.png'
 import './navbar.css'
 import { useState, React, useRef } from 'react';
-import Message from "../messages/Messages";
+
 
 
 
@@ -49,9 +49,9 @@ const changeBackground = () => {
         
         <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul  className=" navbar-nav ms-auto me-4 my-3 my-lg-0">
-                <li  className="nav-item"><a class="nav-link me-lg-3" href="#features">Our Service</a></li>
-                <li  className="nav-item"><a class="nav-link me-lg-3" href="#download">About Us</a></li>
-                <li  className="nav-item"><a class="nav-link me-lg-3" href="http://localhost/server/message-send.php" >Let's talk</a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3" href="#features">Servicios</a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3" href="#download">Quienes Somos</a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3" href="http://localhost/server/message-box.php" >Hablemos</a></li>
                 
             </ul>
             
