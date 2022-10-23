@@ -5,7 +5,7 @@ function Footer() {
     <>
            <section className="bg-gradient-primary-to-secondary">
             <div className="container px-5">
-                <h2 className="text-center text-white font-alt mb-4">Lorem ipsum dsada!</h2>
+                <h2 className="text-center text-white font-alt mb-4">Esperamos poder trabajar juntos!</h2>
                 
             </div>
         </section>
