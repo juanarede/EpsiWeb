@@ -16,9 +16,9 @@ function ContactUs() {
             <div className="cta-content">
                 <div data-aos="fade-right" className="container px-5">
                     <h2 className="text-white display-1 lh-1 mb-4">
-                        Lorem ipsumm.
+                        Mas informacion?
                         <br />
-                        Lorem impsum.
+                        No hay problema...
                     </h2>
                     <a className="btn btn-outline-light py-3 px-4 rounded-pill" href="" target="_blank">Contact Us</a>
                 </div>

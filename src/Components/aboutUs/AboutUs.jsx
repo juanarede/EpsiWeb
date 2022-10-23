@@ -15,15 +15,10 @@ function AboutUs() {
           <div className="row gx-5 align-items-center justify-content-center justify-content-lg-between">
             <div data-aos="fade-right" className=" col-sm-8 col-md-6 ">
               <h2 className="display-4 lh-1 mb-4">
-                Lorem ipsum dolor sit amet, consectetur{" "}
+               Somos EpsiWeb: Miramos hacia adelante{" "}
               </h2>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                ac nibhLorem ipsum dolor sit amet, consectetur adipiscing el.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                ac nibhLorem ipsum dolor sit amet, consectetur adipiscing el.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                ac nibhLorem ipsum dolor sit amet, consectetur adipiscing el.
+              Queremos ayudarte a realizar ese sitio web que impulse tu emprendimiento, contamos con el conocimiento de las principales tecnologías y queremos demostrar nuestra capacidad con hechos, no solo con palabras.
               </p>
             </div>
             <div className="col-12 col-lg-5">
@@ -558,15 +553,10 @@ function AboutUs() {
             </div>
             <div data-aos="fade-left" className="col-sm-8 col-md-6">
               <h2 className="display-4 lh-1 mb-4">
-                Lorem ipsum dolor sit amet, consectetur{" "}
+              Queremos lograr que tengas los mejores resultados{" "}
               </h2>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                ac nibhLorem ipsum dolor sit amet, consectetur adipiscing el
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                ac nibhLorem ipsum dolor sit amet, consectetur adipiscing
-                elLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                ac nibhLorem ipsum dolor sit amet, consectetur adipiscing el
+              Sabemos de las tendencias actuales en material digital, es por eso que nos mantenemos constantemente informados acerca de todas las novedades y llevarlas a nuestros potenciales clientes.
               </p>
             </div>
           </div>
