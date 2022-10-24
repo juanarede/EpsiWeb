@@ -51,7 +51,7 @@ const changeBackground = () => {
             <ul  className=" navbar-nav ms-auto me-4 my-3 my-lg-0">
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#features">Servicios</a></li>
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#download">Quienes Somos</a></li>
-                <li  className="nav-item"><a class="nav-link me-lg-3" href="http://localhost/server/message-box.php" target="new">Hablemos</a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3" href="http://localhost/server/message-box.php" target="new"><i class="bi bi-chat-dots"></i>Hablemos</a></li>
                 
             </ul>
             

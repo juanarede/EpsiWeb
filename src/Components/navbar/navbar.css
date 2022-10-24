@@ -15,3 +15,12 @@
 .nav-link:hover{
     color: blueviolet;
 }
+
+.btn-primary {
+    color: blueviolet;
+    
+  }
+.bi-chat-dots{
+margin-right: 0.3rem;
+}
+
