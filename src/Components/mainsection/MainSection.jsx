@@ -33,7 +33,7 @@ function MainSection() {
                                     <div className="text-center">
                                         <i className="bi-phone icon-feature text-gradient d-block mb-3"></i>
                                         <h3 className="font-alt">Integración de Social Login</h3>
-                                        <p className="text-muted mb-0">Añadimos metodos de autenticación por medio de las principales redes sociales.</p>
+                                        <p className="text-muted mb-0">Añadimos metodos de autenticación a tu pagina web, por medio de las principales redes sociales.</p>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@ function MainSection() {
                                     <div className="text-center">
                                         <i className="bi-phone icon-feature text-gradient d-block mb-3"></i>
                                         <h3 className="font-alt">Plataformas de pagos</h3>
-                                        <p className="text-muted mb-0">Incorporamos distintas plataformas de pago en tu e-commerce.</p>
+                                        <p className="text-muted mb-0">Incorporamos distintas plataformas de pago para los <strong>e-commerce</strong>.</p>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
@@ -51,7 +51,7 @@ function MainSection() {
                                     <div className="text-center">
                                         <i className="bi-phone icon-feature text-gradient d-block mb-3"></i>
                                         <h3 className="font-alt">Posicionamiento</h3>
-                                        <p className="text-muted mb-0">Hacemos llegar tu sitio web al público indicado con Google y su motor de búsqueda.</p>
+                                        <p className="text-muted mb-0">Hacemos llegar tu sitio web al público indicado con <strong>Google</strong> y su motor de búsqueda.</p>
                                     </div>
                                 </div>
                             </div>
