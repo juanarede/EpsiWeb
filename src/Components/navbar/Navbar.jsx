@@ -49,9 +49,9 @@ const changeBackground = () => {
         
         <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul  className=" navbar-nav ms-auto me-4 my-3 my-lg-0">
-                <li  className="nav-item"><a class="nav-link me-lg-3" href="#features">Servicios</a></li>
-                <li  className="nav-item"><a class="nav-link me-lg-3" href="#download">Quienes Somos</a></li>
-                <li  className="nav-item"><a class="nav-link me-lg-3" href="http://localhost/server/message-box.php" target="new"><i class="bi bi-chat-dots"></i>Hablemos</a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3" href="#service">Servicios</a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3" href="#aboutus">Quienes Somos</a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3"  tabindex="-1" href="http://localhost/server/message-box.php" target="new"><i class="bi bi-chat-dots"></i>Hablemos</a></li>
                 
             </ul>
             

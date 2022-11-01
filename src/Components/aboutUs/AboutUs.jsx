@@ -10,7 +10,7 @@ function AboutUs() {
   }, []);
   return (
     <>
-      <section className="bg-light" id="download">
+      <section className="bg-light" id="aboutus">
         <div className="container px-5">
           <div className="row gx-5 align-items-center justify-content-center justify-content-lg-between">
             <div data-aos="fade-right" className=" col-sm-8 col-md-6 ">
