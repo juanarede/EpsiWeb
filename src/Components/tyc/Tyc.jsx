@@ -101,7 +101,7 @@ Siempre que el sitio web y la información y los servicios en el sitio se propor
                 class="my-button"
                 data-bs-dismiss="modal"
               >
-                Close
+                Aceptar
               </button>
             </div>
           </div>
