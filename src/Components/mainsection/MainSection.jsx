@@ -14,7 +14,7 @@ function MainSection() {
      }, []);
   return (
     <>
-      <section id="features">
+      <section id="service">
         <div className="container px-5">
           <div className="row gx-5 align-items-center">
             <div
