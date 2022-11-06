@@ -1,4 +1,5 @@
 import React from 'react'
+import Politdepriv from '../politdepriv/Politdepriv';
 import Tyc from '../tyc/Tyc';
 
 function Footer() {
@@ -41,6 +42,7 @@ function Footer() {
             <div className="col-12 col-sm-12 col-lg-4">
             <div   className="text-white-50 small  pt-4 ">
             <a  className="text-white-50" style={{textDecoration:"none", color:"#fff"}} href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Términos y Condiciones</a>
+            <a  className="text-white-50" style={{textDecoration:"none", color:"#fff", paddingLeft:"1rem"}} href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdropp">Política de Privacidad</a>
             </div>
             
             </div>
@@ -49,6 +51,7 @@ function Footer() {
         </div>
       </footer>
       <Tyc/>
+      <Politdepriv/>
     </>
   );
 }

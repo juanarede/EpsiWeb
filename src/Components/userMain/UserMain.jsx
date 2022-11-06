@@ -13,7 +13,7 @@ function UserMain() {
   return (
     <>
       <Navbar />
-      <Box
+       <Box
         sx={{
           "& > :not(style)": { m: 1 },
           position: "fixed",
@@ -27,7 +27,7 @@ function UserMain() {
             <img class className="icon-wsp" src={whatsappicon} alt="" />
           </a>
         </Fab>
-      </Box>
+      </Box> 
       <Home />
       <Footer />
     </>
