@@ -17,12 +17,10 @@ useEffect(() => {
           <div className="row gx-5 justify-content-center"  data-aos="fade-right">
             <div className="col-xl-8 text-mid">
               <div className="h2 fs-1 text-black  ">
-                Lorem Ipsum is simply dummy text is simply
+                Elegí el plan que se adapte a tus necesidades
               </div>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
+               Una vez que hayas seleccionado una opción nos pondremos en contacto. 
               </p>
             </div>
           </div>
@@ -50,7 +48,7 @@ useEffect(() => {
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ 0.00
+                    AR$ 13000.00
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
@@ -64,17 +62,9 @@ useEffect(() => {
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
+                    Ideal para presentar tu negocio o tu intereses, podrás promocionar tu marca y atraer mas clientes potenciales, con diseño responsive. Tu sitio mas seguro con certificado SSL.
                   </p>
+                  <button>Empezar</button>
                 </div>
               </div>
             </div>
@@ -101,7 +91,7 @@ useEffect(() => {
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ 0.00
+                    AR$ 20000.00
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
@@ -114,17 +104,9 @@ useEffect(() => {
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
+                   Sitio web para pequeñas tiendas, capacidad para hasta 20 imagenes con 4 secciones distintas, con diseño responsive. Tu sitio mas seguro con certificado SSL.
                   </p>
+                  <button>Empezar</button>
                 </div>
               </div>
             </div>
@@ -150,7 +132,7 @@ useEffect(() => {
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ 0.00
+                    AR$ Consultar
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
@@ -163,17 +145,9 @@ useEffect(() => {
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
+                    Tu tienda online, con varias secciones e imagenes segun tus requerimientos, plataforma de pagos (Mercado Pago) y, por supuesto, diseño responsive. Potencia tus ventas de la forma mas profesional. Tu sitio web mas seguro con certificado SSL.
                   </p>
+                  <button>Empezar</button>
                 </div>
               </div>
             </div>
