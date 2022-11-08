@@ -1,4 +1,6 @@
-import {React,useEffect} from "react";
+import React,{useEffect} from "react";
+
+
 
 import ecommerce from "../../assets/img/ecommerce.jpeg";
 import "./precio.css";

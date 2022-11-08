@@ -1,6 +1,7 @@
-
+import React from 'react';
 import './App.css';
 import UserMain from './Components/userMain/UserMain';
+
 
 function App() {
   const queryString = window.location.search;

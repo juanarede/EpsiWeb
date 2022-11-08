@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react'
+import React,{ useEffect } from 'react'
 import logowithe from '../../assets/img/logowithe.png'
 import './midsection.css'
 
