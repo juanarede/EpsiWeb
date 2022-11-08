@@ -23,7 +23,7 @@ function UserMain() {
         }}
       >
         <Fab aria-label="add">
-          <a href="https://api.whatsapp.com/send?phone=1132117480">
+          <a href="https://api.whatsapp.com/send?phone=541132117480" target="new">
             <img class className="icon-wsp" src={whatsappicon} alt="" />
           </a>
         </Fab>

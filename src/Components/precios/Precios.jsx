@@ -1,14 +1,17 @@
-import {React,useEffect} from "react";
+import {React,useEffect, useState} from "react";
 
 import ecommerce from "../../assets/img/ecommerce.jpeg";
 import "./precio.css";
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import Form from "../form/Form";
 
 function Precios() {
 useEffect(() => {
   Aos.init({ duration: 2000 });
 }, []);
+
+
 
   return (
     <>
@@ -64,7 +67,7 @@ useEffect(() => {
                   >
                     Ideal para presentar tu negocio o tu intereses, podrás promocionar tu marca y atraer mas clientes potenciales, con diseño responsive. Tu sitio mas seguro con certificado SSL.
                   </p>
-                  <button>Empezar</button>
+                  <button >Empezar</button>
                 </div>
               </div>
             </div>
@@ -172,7 +175,7 @@ useEffect(() => {
         </div>
         
       </div>
-
+     <Form/>
     
     </>
   );

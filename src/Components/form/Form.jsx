@@ -7,13 +7,18 @@ import axios from "axios";
 
 
 
-
 class Form extends React.Component {
+
+  
+  
+ 
+
   state = {
      name:'',
      email:'',
+     tel:'',
      message:'',
-     emailStutus:''
+     emailStatus:''
   }
 
 handleChange = input=> e =>{
@@ -24,7 +29,7 @@ handleChange = input=> e =>{
 
 submitForm = (e) =>{
  //console.log(this.state);
-
+let formu = document.getElementById("action");
   e.preventDefault();
 
  var request=axios({
@@ -34,7 +39,15 @@ submitForm = (e) =>{
     params:{
       name: this.state.name,
       email: this.state.email,
+      tel: this.state.tel,
       message: this.state.message
+    }
+  }).then(result=>{
+    if(result){
+      
+      formu.innerHTML= "<div class='alert alert-success' role='alert'>Mensaje enviado, estaremos respondiendo a la brevedad</div>";
+    }else{
+      formu.innerHTML= "<div class='alert alert-warning' role='alert'>Error al enviar</div>";
     }
   })
 
@@ -44,10 +57,14 @@ submitForm = (e) =>{
 
 render(){
   
+ 
+   
+
   const {
 
     name,
     email,
+    tel,
     message
 
   }= this.state;
@@ -69,10 +86,13 @@ return(
         <input type="text" label="Nombre" name="nombre"  placeholder="Nombre" onChange={this.handleChange('name')} value={name}/>
 
         <input type="email" className="text" name="email" placeholder="email" required onChange={this.handleChange('email')} value={email}/>
+
+        <input type="text" className="text" name="tel" placeholder="Tel/Movil" required onChange={this.handleChange('tel')} value={tel}/>
         
         <textarea name="mensaje" id="" cols="30" rows="10" required placeholder="Mensaje" onChange={this.handleChange('message')} value={message}></textarea>
 
         <button type="submit" className="btn">Enviar</button>
+        <div id="action"></div>
        </form>
 
       </div>
@@ -87,12 +107,8 @@ return(
   
 
 
-
-
-
-
-
 )
+
 }
 }
 
