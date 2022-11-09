@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React,{useEffect, useState} from "react";
 
 
 
@@ -13,11 +13,24 @@ useEffect(() => {
   Aos.init({ duration: 2000 });
 }, []);
 
+const state = {
+   price:''
+}
+const enviarFormulario=(e)=>{
+  e.preventDefault();
+  console.log(e.target.value);
+}
 
+const padreHijo = input =>e =>{
+  
+  this.setState({[input]:e.target.value});
+   
+}
 
 
   return (
     <>
+    <Form/>
       <div className="bg-light" id="precios">
         <div className="container container-card">
           <div className="row gx-5 justify-content-center"  data-aos="fade-right">
@@ -70,7 +83,12 @@ useEffect(() => {
                   >
                     Ideal para presentar tu negocio o tu intereses, podrás promocionar tu marca y atraer mas clientes potenciales, con diseño responsive. Tu sitio mas seguro con certificado SSL.
                   </p>
-                  <button >Empezar</button>
+
+                  <form>
+                    <input type="hidden" value="Nada" onClick={enviarFormulario}/>
+                  <button type="submit" data-bs-toggle="modal" onClick={()=>padreHijo()} data-bs-target="#exampleModal">Empezar</button>
+                  </form>
+
                 </div>
               </div>
             </div>
@@ -178,7 +196,7 @@ useEffect(() => {
         </div>
         
       </div>
-     <Form/>
+     
     
     </>
   );

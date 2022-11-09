@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, Component} from "react";
 import PropTypes  from "prop-types";
 import axios from "axios";
 
@@ -9,7 +9,7 @@ import axios from "axios";
 
 class Form extends React.Component {
 
-  
+ 
   
  
 
@@ -58,7 +58,7 @@ let formu = document.getElementById("action");
 render(){
   
  
-   
+ const {data} = this.props; 
 
   const {
 
@@ -89,7 +89,7 @@ return(
 
         <input type="text" className="text" name="tel" placeholder="Tel/Movil" required onChange={this.handleChange('tel')} value={tel}/>
         
-        <textarea name="mensaje" id="" cols="30" rows="10" required placeholder="Mensaje" onChange={this.handleChange('message')} value={message}></textarea>
+        <textarea name="mensaje" id="" cols="30" rows="10" required placeholder="Mensaje" onChange={this.handleChange('message')} value={message}>{data}</textarea>
 
         <button type="submit" className="btn">Enviar</button>
         <div id="action"></div>
