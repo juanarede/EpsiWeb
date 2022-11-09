@@ -24,6 +24,7 @@ const changeBackground = () => {
   };
   window.addEventListener("scroll", changeBackground);
   return (
+    <>
     <AppBar sx={
         navbarScroll
           ? {
@@ -61,9 +62,12 @@ const changeBackground = () => {
      
 
         </div>
+        
     </div>
-<Form/>
+
 </AppBar>
+<div style={{zindex:"3000"}}><Form/></div>
+</>
 
   )
   

@@ -64,7 +64,7 @@ useEffect(() => {
                   >
                     Ideal para presentar tu negocio o tu intereses, podrás promocionar tu marca y atraer mas clientes potenciales, con diseño responsive. Tu sitio mas seguro con certificado SSL.
                   </p>
-                  <button>Empezar</button>
+                  <button style={{marginTop:"1.5rem"}} class="my-button">Empezar</button>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@ useEffect(() => {
                   >
                    Sitio web para pequeñas tiendas, capacidad para hasta 20 imagenes con 4 secciones distintas, con diseño responsive. Tu sitio mas seguro con certificado SSL.
                   </p>
-                  <button>Empezar</button>
+                  <button style={{marginTop:"1.5rem"}} class="my-button">Empezar</button>
                 </div>
               </div>
             </div>
@@ -147,7 +147,7 @@ useEffect(() => {
                   >
                     Tu tienda online, con varias secciones e imagenes segun tus requerimientos, plataforma de pagos (Mercado Pago) y, por supuesto, diseño responsive. Potencia tus ventas de la forma mas profesional. Tu sitio web mas seguro con certificado SSL.
                   </p>
-                  <button>Empezar</button>
+                  <button  class="my-button">Empezar</button>
                 </div>
               </div>
             </div>
