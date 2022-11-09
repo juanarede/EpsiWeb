@@ -106,7 +106,7 @@ useEffect(() => {
                   >
                    Sitio web para pequeñas tiendas, capacidad para hasta 20 imagenes con 4 secciones distintas, con diseño responsive. Tu sitio mas seguro con certificado SSL.
                   </p>
-                  <button style={{marginTop:"1.5rem"}} class="my-button">Empezar</button>
+                  <button style={{marginTop:"1.5rem"}} className="my-button">Empezar</button>
                 </div>
               </div>
             </div>
