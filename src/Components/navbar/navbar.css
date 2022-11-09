@@ -1,6 +1,9 @@
 .logonav{
     width: 10rem;
 }
+#mainNav{
+    z-index: 1000;
+}
 .nav-item{
     color: #ffff;
     font-size: 1.3rem;

@@ -25,6 +25,7 @@ const changeBackground = () => {
   };
   window.addEventListener("scroll", changeBackground);
   return (
+    <>
     <AppBar sx={
         navbarScroll
           ? {
@@ -54,7 +55,7 @@ const changeBackground = () => {
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#service">Servicios</a></li>
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#aboutus">Quienes Somos</a></li>
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#precios">Diseño Web Precios</a></li>
-                <li style={{paddingTop:"0.3rem"}}  className="nav-item"><button class="my-button "  tabindex="-1" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-chat-dots"></i>Hablemos</button></li>
+                <li style={{paddingTop:"0.3rem"}}  className="nav-item"><button class="my-button "  href="#contact"><i class="bi bi-chat-dots"></i>Hablemos</button></li>
                
                 
             </ul>
@@ -62,9 +63,12 @@ const changeBackground = () => {
      
 
         </div>
+        
     </div>
-<Form/>
+
 </AppBar>
+
+</>
 
   )
   
