@@ -6,31 +6,19 @@ import ecommerce from "../../assets/img/ecommerce.jpeg";
 import "./precio.css";
 import Aos from 'aos'
 import "aos/dist/aos.css"
-import Form from "../form/Form";
+
 
 function Precios() {
 useEffect(() => {
   Aos.init({ duration: 2000 });
 }, []);
 
-const state = {
-   price:''
-}
-const enviarFormulario=(e)=>{
-  e.preventDefault();
-  console.log(e.target.value);
-}
 
-const padreHijo = input =>e =>{
-  
-  this.setState({[input]:e.target.value});
-   
-}
 
 
   return (
     <>
-    <Form/>
+    
       <div className="bg-light" id="precios">
         <div className="container container-card">
           <div className="row gx-5 justify-content-center"  data-aos="fade-right">
@@ -84,10 +72,9 @@ const padreHijo = input =>e =>{
                     Ideal para presentar tu negocio o tu intereses, podrás promocionar tu marca y atraer mas clientes potenciales, con diseño responsive. Tu sitio mas seguro con certificado SSL.
                   </p>
 
-                  <form>
-                    <input type="hidden" value="Nada" onClick={enviarFormulario}/>
-                  <button type="submit" data-bs-toggle="modal" onClick={()=>padreHijo()} data-bs-target="#exampleModal">Empezar</button>
-                  </form>
+                  
+                  <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Landing Page ▶ ...podrían darme mas detalles?🤔" target="new">Empezar</a>
+                  
 
                 </div>
               </div>
@@ -130,7 +117,7 @@ const padreHijo = input =>e =>{
                   >
                    Sitio web para pequeñas tiendas, capacidad para hasta 20 imagenes con 4 secciones distintas, con diseño responsive. Tu sitio mas seguro con certificado SSL.
                   </p>
-                  <button>Empezar</button>
+                  <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Web Basic ▶ ...podrían darme mas detalles?🤔" target="new">Empezar</a>
                 </div>
               </div>
             </div>
@@ -171,7 +158,7 @@ const padreHijo = input =>e =>{
                   >
                     Tu tienda online, con varias secciones e imagenes segun tus requerimientos, plataforma de pagos (Mercado Pago) y, por supuesto, diseño responsive. Potencia tus ventas de la forma mas profesional. Tu sitio web mas seguro con certificado SSL.
                   </p>
-                  <button>Empezar</button>
+                  <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi E-Commerce ▶ ...podrían darme mas detalles?🤔" target="new">Empezar</a>
                 </div>
               </div>
             </div>

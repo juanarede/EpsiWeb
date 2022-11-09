@@ -1,9 +1,65 @@
-import React from 'react'
+import React ,{useState, Component}from 'react'
 import Politdepriv from '../politdepriv/Politdepriv';
 import Tyc from '../tyc/Tyc';
 import ContactImg from "../../assets/img/dev.jpg"
+import axios from 'axios';
 
-function Footer() {
+class Footer extends React.Component {
+ state = {
+    name:'',
+    email:'',
+    tel:'',
+    message:'Quiero recibir una cotización para mi proximo sitio web...'
+ }
+
+handleChange = input =>e=>{
+    this.setState({
+      [input]:e.target.value
+    });
+ }
+ submitForm = (e) =>{
+  //console.log(this.state);
+ let action = document.getElementById("action");
+ let formu = document.getElementById("demo-form")
+   e.preventDefault();
+ 
+  var request=axios({
+     method: "get",
+     url:'http://localhost/EpsiWeb/api/contact/index.php',
+     //headers: {"Content-type":"Application/json"},
+     params:{
+       name: this.state.name,
+       email: this.state.email,
+       tel: this.state.tel,
+       message: this.state.message
+     }
+   }).then(result=>{
+     if(result){
+       
+       action.innerHTML= `<div class='alert alert-success' role='alert'>Muchas gracias ${this.state.name} ! Estaremos respondiendo a la brevedad</div>`;
+       this.setState({
+         name:'',
+         email:'',
+         tel:''
+       })
+     }else{
+       action.innerHTML= "<div class='alert alert-warning' role='alert'>Error al enviar</div>";
+     }
+   })
+ 
+   console.log(request);
+ }
+
+render(){
+  const {
+
+    name,
+    email,
+    tel,
+    message
+
+  }= this.state;
+
   return (
     <>
       <section className="bg-gradient-primary-to-secondary">
@@ -19,17 +75,20 @@ function Footer() {
       <div className='container' id="contact">
       <div className='row'>
       <div className="col-xs-12 col-md-5 col-lg-5">
-      <h1 style={{color:"#fff", fontSize:"2rem"}} class="text-start mb-4 card-title display-4 lh-1 mb-4 ">lorem ipsum</h1>
-      <form id="demo-form" action="" method="POST" class=" bg-black">
-   <input type="text" name="nombre" placeholder="Nombre" class="form-control mb-3"/>
-   <input type="email" name="email" placeholder="Email: usuario@ejemplo.com" class="form-control mb-3"/>
+      <h4 style={{color:"#fff", fontSize:"2rem"}} class="text-start mb-4 card-title display-4 lh-1 mb-4 ">Como te ayudamos:</h4>
+
+    <form id="demo-form" class=" bg-black" onSubmit={this.submitForm}>
+   <input type="text" name="nombre" placeholder="Nombre" class="form-control mb-3" required onChange={this.handleChange('name')} value={name}/>
+   <input type="email" name="email" placeholder="Email: usuario@ejemplo.com" class="form-control mb-3" required onChange={this.handleChange('email')} value={email}/>
+   <input type="text" name="telefono" placeholder="Teléfono" class="form-control mb-3" required onChange={this.handleChange('tel')} value={tel}/>
    <label for="msg" class="form-label text-start lead fw-normal  mb-3 mb-lg-0" style={{color:"#fff"}}>Mensaje</label>
-   <textarea id="msg" name="mensaje" id="#" cols="30" rows="10" class="form-control lead fw-normal text-muted mb-5 mb-lg-0">Quiero recibir una cotización para mi proximo sitio web...</textarea>
+   <textarea id="msg" name="mensaje" cols="30" rows="10" class="form-control lead fw-normal text-muted mb-5 mb-lg-0" required onChange={this.handleChange('message')} value={message}></textarea>
    <div class="d-grid gap-2">
    
    <button type="submit" value="Send" name="btn-enviar" class="btn my-button mt-2 " data-sitekey="6Lds0dMiAAAAAAxEhIKaGDsbqMvEkO_Gbvyjz5nK" data-callback='onSubmit' data-action='submit'>Enviar </button>
    
     </div>
+    <div id="action"></div>
  </form>
       </div>
       <div class="col-1">
@@ -39,19 +98,21 @@ function Footer() {
       <img class="img-fluid d-none d-md-block" style={{width:"35.8rem",marginLeft:"2rem"}} src={ContactImg} alt="" />
     <hr style={{colo:"#fff"}} className="m-b4" />
       
-      <p style={{color:"#fff"}} class="text-start">Otórganos algunos detalles acerca de tu emprendimiento web. Tu próximo sitio web debe llegar al publico realmente interesado con lo que ofreces. Con la información que nos puedas brindar podremos crear el contenido ideal para ese proyecto que tienes en mente.</p>
+      <p style={{color:"#fff"}} class="text-start">Podes otórganos algunos detalles acerca de tu emprendimiento, o asunto de tu interés. Tu próximo sitio web debe llegar al publico realmente interesado con lo que ofreces. Con la información que nos puedas brindar podremos crear el estilo ideal para ese proyecto que tienes en mente.</p>
       <hr style={{colo:"#fff"}} className="m-b4" />
       <div className="text-center text-white font-alt ">
             Seguinos en Nuestras Redes!!
           </div>
+          <a href="https://www.facebook.com/profile.php?id=100086997386336" target="new">
           <i
             style={{ width: "2rem", color: "#fff", paddingTop: "0.3rem" }}
             class="fa-brands fa-facebook"
-          ></i>
+          ></i></a>
+          <a href="https://www.instagram.com/epsiwebdevs/?hl=es-la" target="new">
           <i
             style={{ width: "2rem", color: "#fff", paddingTop: "0.3rem" }}
             class="fa-brands fa-instagram"
-          ></i>
+          ></i></a>
           <i
             style={{ width: "2rem", color: "#fff", paddingTop: "0.3rem" }}
             class="fa-brands fa-linkedin"
@@ -90,6 +151,7 @@ function Footer() {
       <Politdepriv/>
     </>
   );
+}
 }
 
 export default Footer
