@@ -14,10 +14,10 @@ function Footer() {
         </div>
       </section>
 
-      <footer className="bg-black text-center py-5">
+      <footer className="bg-black text-center py-5" id="contact">
 
-      <div className='container' id="contact">
-      <div className='row'>
+      <div className='container' >
+      <div className='row' >
       <div className="col-xs-12 col-md-5 col-lg-5">
       <h1 style={{color:"#fff", fontSize:"2rem"}} class="text-start mb-4 card-title display-4 lh-1 mb-4 ">lorem ipsum</h1>
       <form id="demo-form" action="" method="POST" class=" bg-black">
