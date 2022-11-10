@@ -88,7 +88,9 @@ render(){
    <button type="submit" value="Send" name="btn-enviar" class="btn my-button mt-2 " data-sitekey="6Lds0dMiAAAAAAxEhIKaGDsbqMvEkO_Gbvyjz5nK" data-callback='onSubmit' data-action='submit'>Enviar </button>
    
     </div>
+    
     <div id="action"></div>
+
  </form>
       </div>
       <div class="col-1">
@@ -96,7 +98,7 @@ render(){
   </div>
       <div style={{marginTop:"3.3rem"}}  className='col-xs-12 col-md-5 col-lg-6 '>
       <img class="img-fluid d-none d-md-block" style={{width:"35.8rem",marginLeft:"2rem"}} src={ContactImg} alt="" />
-    <hr style={{colo:"#fff"}} className="m-b4" />
+    <hr style={{color:"#fff"}} className="m-b4" />
       
       <p style={{color:"#fff"}} class="text-start">Podes otórganos algunos detalles acerca de tu emprendimiento, o asunto de tu interés. Tu próximo sitio web debe llegar al publico realmente interesado con lo que ofreces. Con la información que nos puedas brindar podremos crear el estilo ideal para ese proyecto que tienes en mente.</p>
       <hr style={{colo:"#fff"}} className="m-b4" />
