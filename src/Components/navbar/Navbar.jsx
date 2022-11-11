@@ -55,7 +55,7 @@ const changeBackground = () => {
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#service">Servicios</a></li>
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#aboutus">Quienes Somos</a></li>
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#precios">Diseño Web Precios</a></li>
-                <li style={{paddingTop:"0.3rem"}}  className="nav-item"><button class="my-button "  href="#contact"><i class="bi bi-chat-dots"></i>Hablemos</button></li>
+                <li style={{paddingTop:"0.3rem"}}  className="nav-item"><a  href="#contact"><button class="my-button " ><i class="bi bi-chat-dots"></i>Hablemos</button></a></li>
                
                 
             </ul>

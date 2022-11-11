@@ -1,7 +1,7 @@
 import React ,{useState, Component}from 'react'
 import Politdepriv from '../politdepriv/Politdepriv';
 import Tyc from '../tyc/Tyc';
-import ContactImg from "../../assets/img/dev.jpg"
+import ContactImg from "../../assets/img/contactimg.png"
 import axios from 'axios';
 
 class Footer extends React.Component {
@@ -82,7 +82,7 @@ render(){
    <input type="email" name="email" placeholder="Email: usuario@ejemplo.com" class="form-control mb-3" required onChange={this.handleChange('email')} value={email}/>
    <input type="text" name="telefono" placeholder="Teléfono" class="form-control mb-3" required onChange={this.handleChange('tel')} value={tel}/>
    <label for="msg" class="form-label text-start lead fw-normal  mb-3 mb-lg-0" style={{color:"#fff"}}>Mensaje</label>
-   <textarea id="msg" name="mensaje" cols="30" rows="10" class="form-control lead fw-normal text-muted mb-5 mb-lg-0" required onChange={this.handleChange('message')} value={message}></textarea>
+   <textarea style={{height:"13rem"}} id="msg" name="mensaje" cols="30" rows="10" class="form-control lead fw-normal text-muted mb-5 mb-lg-0" required onChange={this.handleChange('message')} value={message}></textarea>
    <div class="d-grid gap-2">
    
    <button type="submit" value="Send" name="btn-enviar" class="btn my-button mt-2 " data-sitekey="6Lds0dMiAAAAAAxEhIKaGDsbqMvEkO_Gbvyjz5nK" data-callback='onSubmit' data-action='submit'>Enviar </button>
@@ -101,8 +101,11 @@ render(){
     <hr style={{color:"#fff"}} className="m-b4" />
       
       <p style={{color:"#fff"}} class="text-start">Podes otórganos algunos detalles acerca de tu emprendimiento, o asunto de tu interés. Tu próximo sitio web debe llegar al publico realmente interesado con lo que ofreces. Con la información que nos puedas brindar podremos crear el estilo ideal para ese proyecto que tienes en mente.</p>
-      <hr style={{colo:"#fff"}} className="m-b4" />
-      <div className="text-center text-white font-alt ">
+      <hr style={{color:"#fff"}} className="m-b4" />
+
+      
+    
+        <div className="text-center text-white font-alt ">
             Seguinos en Nuestras Redes!!
           </div>
           <a href="https://www.facebook.com/profile.php?id=100086997386336" target="new">
@@ -119,7 +122,9 @@ render(){
             style={{ width: "2rem", color: "#fff", paddingTop: "0.3rem" }}
             class="fa-brands fa-linkedin"
           ></i>
+      
       </div>
+      
 
 
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import Dev from "../../assets/img/Dev.png";
+import Dev from "../../assets/img/Dev.png"
 
 function Header() {
   return (
