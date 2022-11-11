@@ -118,10 +118,11 @@ render(){
             style={{ width: "2rem", color: "#fff", paddingTop: "0.3rem" }}
             class="fa-brands fa-instagram"
           ></i></a>
+          <a href="https://www.linkedin.com/company/epsiwebdev/about/" target="new">
           <i
             style={{ width: "2rem", color: "#fff", paddingTop: "0.3rem" }}
             class="fa-brands fa-linkedin"
-          ></i>
+          ></i></a>
       
       </div>
       
