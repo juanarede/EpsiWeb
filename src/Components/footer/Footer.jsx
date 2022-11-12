@@ -135,9 +135,12 @@ render(){
         <div style={{marginTop:"2rem"}} className="container px-5  ">
          
           <div className="row">
+          <p style={{color:"#fff"}}  className='text-center'><i class="fa-solid fa-phone"></i>+541132117480 / +5491165623938</p>
+                 <p className='text-center' style={{color:"#fff"}}><i style={{marginRight:"0.4rem"}} class="fa-regular fa-envelope"></i>info@epsiweb.com</p>
             <div className="col-12 col-sm-12 col-lg-4">
               <div className="text-white-50 small  pt-4 ">
-                <div className="mb-2 ">
+                <div  className=''>
+              
                   &copy; EpsiWeb 2022. All Rights Reserved.
                 </div>
               </div>
