@@ -9,7 +9,7 @@ class Footer extends React.Component {
     name:'',
     email:'',
     tel:'',
-    message:'Quiero recibir una cotización para mi proximo sitio web...'
+    message:'Quiero recibir una cotización para mi próximo sitio web...'
  }
 
 handleChange = input =>e=>{

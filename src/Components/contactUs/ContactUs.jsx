@@ -16,7 +16,7 @@ function ContactUs() {
             <div className="cta-content">
                 <div data-aos="fade-right" className="container px-5">
                     <h2 className="text-white display-1 lh-1 mb-4">
-                        Mas informacion?
+                        Mas información?
                         <br />
                         No hay problema...
                     </h2>
