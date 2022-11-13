@@ -73,7 +73,7 @@ useEffect(() => {
                   </p>
 
                   
-                  <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Landing Page ▶ ...podrían darme mas detalles?🤔" target="new"><button style={{marginTop:"1.4rem"}} className="my-button"> Empezar</button></a>
+                  <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Landing Page ▶ ...podrían darme mas detalles?🤔" target="new"><button style={{marginTop:"3rem"}} className="my-button"> Empezar</button></a>
                   
 
                 </div>
@@ -117,7 +117,7 @@ useEffect(() => {
                   >
                    Sitio web para pequeñas tiendas, capacidad para hasta 20 imagenes con 4 secciones distintas, con diseño responsive. Tu sitio mas seguro con certificado SSL.
                   </p>
-                  <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Web Basic ▶ ...podrían darme mas detalles?🤔" target="new"><button style={{marginTop:"1.4rem"}} className="my-button"> Empezar</button></a>
+                  <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Web Basic ▶ ...podrían darme mas detalles?🤔" target="new"><button style={{marginTop:"3rem"}} className="my-button"> Empezar</button></a>
                 </div>
               </div>
             </div>
