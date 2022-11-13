@@ -25,7 +25,7 @@ handleChange = input =>e=>{
  
   var request=axios({
      method: "get",
-     url:'http://localhost/EpsiWeb/api/contact/index.php',
+     url:'https://epsiweb.com/api/contact/index.php',
      //headers: {"Content-type":"Application/json"},
      params:{
        name: this.state.name,
