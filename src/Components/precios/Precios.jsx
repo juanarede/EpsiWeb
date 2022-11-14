@@ -69,7 +69,7 @@ useEffect(() => {
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                    Ideal para presentar tu negocio o tu intereses, podrás promocionar tu marca y atraer mas clientes potenciales, con diseño responsive. Tu sitio mas seguro con certificado SSL.
+                    Ideal para presentar tu negocio o algo de tu interés, podrás promocionar tu marca y atraer mas clientes potenciales, con diseño responsive. Tu sitio mas seguro con certificado SSL.
                   </p>
 
                   

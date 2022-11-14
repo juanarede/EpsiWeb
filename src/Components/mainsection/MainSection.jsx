@@ -58,7 +58,7 @@ function MainSection() {
                   <div className="col-md-6">
                     <div className="text-center">
                     <i class="bi bi-graph-up icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">Posicionamiento</h3>
+                      <h3 className="font-alt">Posicionamiento SEO</h3>
                       <p className="text-muted mb-0">
                         Hacemos llegar tu sitio web al público indicado con{" "}
                         <strong>Google</strong> y su motor de búsqueda.
