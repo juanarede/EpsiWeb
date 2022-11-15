@@ -21,18 +21,20 @@ function Home() {
   
   }, []);
   return (
-    <div>
-      
+   <>
       <Header/>
      
-      <MidSection/>
-    
-      <MainSection/>
+     <MidSection/>
+   
+     <MainSection/>
+     
+     <AboutUs/>
+     <Precios/>
+     <ContactUs/>
+   </>
       
-      <AboutUs/>
-      <Precios/>
-      <ContactUs/>
-    </div>
+     
+   
   );
 }
 

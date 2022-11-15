@@ -44,6 +44,7 @@ const changeBackground = () => {
       } className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
    
     <div className="container px-5">
+       
         <a className="navbar-brand fw-bold" href="#page-top"><img className='logonav' src={logoWithe} alt=""/></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -55,7 +56,7 @@ const changeBackground = () => {
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#service">Servicios</a></li>
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#aboutus">Quienes Somos</a></li>
                 <li  className="nav-item"><a class="nav-link me-lg-3" href="#precios">Diseño Web Precios</a></li>
-                <li style={{paddingTop:"0.3rem", marginLeft:"1rem"}}  className="nav-item"><a  href="#contact"><button class="my-button " ><i class="bi bi-chat-dots"></i>Hablemos</button></a></li>
+                <li style={{paddingTop:"0.3rem", marginLeft:"1rem" }}  className="nav-item"><a  href="#contact"><button class="my-button " ><i class="bi bi-chat-dots"></i>Hablemos</button></a></li>
                
                 
             </ul>

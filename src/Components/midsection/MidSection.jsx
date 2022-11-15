@@ -14,7 +14,7 @@ function MidSection() {
     <>
       <div className='mid-section'>
       <aside className="text-center bg-gradient-primary-to-secondary">
-            <div className="container px-5">
+            <div className="container-fluid px-5">
                 <div className="row gx-5 justify-content-center">
                     <div className="col-xl-8 text-mid">
                         <div data-aos="fade-right" className="h2 fs-1 text-white mb-4 ">"Nuestro compromiso, es poder acompañarte y transformar tus ideas en algo maravilloso y dinámico"</div>

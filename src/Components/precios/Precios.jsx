@@ -31,7 +31,7 @@ useEffect(() => {
               </p>
             </div>
           </div>
-
+          <div className="container">
           <div className="row">
             <div className="col-12 col-md-12 col-lg-4">
               <div className="card card-01">
@@ -163,6 +163,8 @@ useEffect(() => {
               </div>
             </div>
           </div>
+          </div>
+          <div className="container">
            <div className="row  justify-content-center"  >
             <div className="col-xl-6 text-mid">
             <p
@@ -180,6 +182,7 @@ useEffect(() => {
               </p>
             </div>
           </div> 
+        </div>
         </div>
         
       </div>
