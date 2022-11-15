@@ -24,10 +24,10 @@ handleChange = input =>e=>{
    e.preventDefault();
  
   var request=axios({
-     method: "get",
-     url:'https://epsiweb.com/api/contact/index.php',
-     //headers: {"Content-type":"Application/json"},
-     params:{
+     method: "post",
+     url:'http://localhost/EpsiWeb/api/contact/index.php',
+     headers: {"Content-type":"Application/json"},
+     data:{
        name: this.state.name,
        email: this.state.email,
        tel: this.state.tel,
