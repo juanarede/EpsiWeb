@@ -8,7 +8,7 @@ import Precios from '../precios/Precios'
 
 import Aos from 'aos'
 import "aos/dist/aos.css"
-import { PrecisionManufacturing } from "@mui/icons-material";
+
 
 
 
