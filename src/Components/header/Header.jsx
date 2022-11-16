@@ -53,7 +53,7 @@ function Header() {
               <img
                   className="img-header d-none d-md-block"
                   src={Dev}
-                  alt=""
+                  alt="Tablet-&-movil"
                 />
                 </div>
               </div>

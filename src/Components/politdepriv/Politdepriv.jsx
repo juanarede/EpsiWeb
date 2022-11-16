@@ -15,13 +15,13 @@ function Politdepriv() {
         <div class="modal-dialog modal-dialog-scrollable ">
           <div class="modal-content bg-black">
             <div class="modal-header">
-              <h1
+              <h3
                 style={{ color: "#fff" }}
                 class="modal-title fs-5"
                 id="staticBackdropLabel"
               >
                 Politica de Privacidad
-              </h1>
+              </h3>
               <button
                 type="button"
                 class="btn-close btn-close-white"

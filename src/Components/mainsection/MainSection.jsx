@@ -26,7 +26,7 @@ function MainSection() {
                   <div className="col-md-6 mb-5">
                     <div className="text-center">
                       <i className="bi-phone icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">Diseño web Responsivo</h3>
+                      <h3 className="font-alt">Diseño web Responsive</h3>
                       <p className="text-muted mb-0">
                         Tu sitio web en cualquier dispositivo con la mejor
                         calidad visual.
@@ -71,7 +71,7 @@ function MainSection() {
               </div>
             </div>
             <div className="col-lg-4 col-xs-12 order-lg-0">
-              <img className="phone-main img-fluid" src={phone} alt="" />
+              <img className="phone-main img-fluid" src={phone} alt="Movil-Phone" />
             </div>
           </div>
         </div>

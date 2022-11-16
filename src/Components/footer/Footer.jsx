@@ -97,7 +97,7 @@ render(){
   
   </div>
       <div style={{marginTop:"3.3rem"}}  className='col-xs-12 col-md-5 col-lg-6 '>
-      <img class="img-fluid d-none d-md-block" style={{width:"35.8rem",marginLeft:"2rem"}} src={ContactImg} alt="" />
+      <img class="img-fluid d-none d-md-block" style={{width:"35.8rem",marginLeft:"2rem"}} src={ContactImg} alt="Movil-Screen" />
     <hr style={{color:"#fff"}} className="m-b4" />
       
       <p style={{color:"#fff"}} class="text-start">Podes otórganos algunos detalles acerca de tu emprendimiento, o asunto de tu interés. Tu próximo sitio web debe llegar al publico realmente interesado con lo que ofreces. Con la información que nos puedas brindar podremos crear el estilo ideal para ese proyecto que tienes en mente.</p>
