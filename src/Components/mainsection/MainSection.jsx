@@ -71,7 +71,7 @@ function MainSection() {
               </div>
             </div>
             <div className="col-lg-4 col-xs-12 order-lg-0">
-              <img className="phone-main img-fluid" src={phone} alt="Movil-Phone" />
+              <img className="phone-main img-fluid" src={phone} alt="Movil-Phone" title='EpsiWeb-Main'/>
             </div>
           </div>
         </div>

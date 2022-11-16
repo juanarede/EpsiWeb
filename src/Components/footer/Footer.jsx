@@ -85,7 +85,7 @@ render(){
    <textarea style={{height:"13rem"}} id="msg" name="mensaje" cols="30" rows="10" class="form-control lead fw-normal text-muted mb-5 mb-lg-0" required onChange={this.handleChange('message')} value={message}></textarea>
    <div class="d-grid gap-2">
    
-   <button type="submit" value="Send" name="btn-enviar" class="btn my-button mt-2 " data-sitekey="6Lds0dMiAAAAAAxEhIKaGDsbqMvEkO_Gbvyjz5nK" data-callback='onSubmit' data-action='submit'>Enviar </button>
+   <button type="submit" value="Send" name="btn-enviar" class="btn my-button mt-2 " data-sitekey="6Lds0dMiAAAAAAxEhIKaGDsbqMvEkO_Gbvyjz5nK" data-callback='onSubmit' data-action='submit' title='Mensajeria'>Enviar </button>
    
     </div>
     
@@ -97,7 +97,7 @@ render(){
   
   </div>
       <div style={{marginTop:"3.3rem"}}  className='col-xs-12 col-md-5 col-lg-6 '>
-      <img class="img-fluid d-none d-md-block" style={{width:"35.8rem",marginLeft:"2rem"}} src={ContactImg} alt="Movil-Screen" />
+      <img class="img-fluid d-none d-md-block" style={{width:"35.8rem",marginLeft:"2rem"}} src={ContactImg} title="EpsiWeb-Footer" alt="Movil-Screen" />
     <hr style={{color:"#fff"}} className="m-b4" />
       
       <p style={{color:"#fff"}} class="text-start">Podes otórganos algunos detalles acerca de tu emprendimiento, o asunto de tu interés. Tu próximo sitio web debe llegar al publico realmente interesado con lo que ofreces. Con la información que nos puedas brindar podremos crear el estilo ideal para ese proyecto que tienes en mente.</p>
@@ -108,17 +108,17 @@ render(){
         <div className="text-center text-white font-alt ">
             Seguinos en Nuestras Redes!!
           </div>
-          <a href="https://www.facebook.com/profile.php?id=100086997386336" target="new">
+          <a href="https://www.facebook.com/profile.php?id=100086997386336" target="new" title='Facebook-Link'>
           <i
             style={{ width: "2rem", color: "#fff", paddingTop: "0.3rem" }}
             class="fa-brands fa-facebook"
           ></i></a>
-          <a href="https://www.instagram.com/epsiwebdevs/?hl=es-la" target="new">
+          <a href="https://www.instagram.com/epsiwebdevs/?hl=es-la" target="new" title='Instagram-Link'>
           <i
             style={{ width: "2rem", color: "#fff", paddingTop: "0.3rem" }}
             class="fa-brands fa-instagram"
           ></i></a>
-          <a href="https://www.linkedin.com/company/epsiwebdev/about/" target="new">
+          <a href="https://www.linkedin.com/company/epsiwebdev/about/" target="new" title='Linkedin-Link'>
           <i
             style={{ width: "2rem", color: "#fff", paddingTop: "0.3rem" }}
             class="fa-brands fa-linkedin"
@@ -149,8 +149,8 @@ render(){
             <div className="col-12 col-sm-12 col-lg-4"></div>
             <div className="col-12 col-sm-12 col-lg-4">
             <div   className="text-white-50 small  pt-4 ">
-            <a  className="text-white-50" style={{textDecoration:"none", color:"#fff"}} href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Términos y Condiciones</a>
-            <a  className="text-white-50" style={{textDecoration:"none", color:"#fff", paddingLeft:"1rem"}} href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdropp">Política de Privacidad</a>
+            <a  className="text-white-50" style={{textDecoration:"none", color:"#fff"}} href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" title='Terms-Cond'>Términos y Condiciones</a>
+            <a  className="text-white-50" style={{textDecoration:"none", color:"#fff", paddingLeft:"1rem"}} href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdropp" title='Priv-Pol'>Política de Privacidad</a>
             </div>
             
             </div>

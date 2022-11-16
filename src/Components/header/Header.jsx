@@ -54,6 +54,7 @@ function Header() {
                   className="img-header d-none d-md-block"
                   src={Dev}
                   alt="Tablet-&-movil"
+                  title="EpsiWeb-Header"
                 />
                 </div>
               </div>

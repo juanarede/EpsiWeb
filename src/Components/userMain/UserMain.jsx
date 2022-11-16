@@ -23,8 +23,8 @@ function UserMain() {
         }}
       >
         <Fab aria-label="add">
-          <a href="https://api.whatsapp.com/send?phone=541132117480&text=Hola... Quería obtener una cotización para mi proximo sitio web!!!😁" target="new">
-            <img class className="icon-wsp" src={whatsappicon} alt="WhatsApp" />
+          <a href="https://api.whatsapp.com/send?phone=541132117480&text=Hola... Quería obtener una cotización para mi proximo sitio web!!!😁" target="new" title="WhatsApp-Link-4">
+            <img class className="icon-wsp" src={whatsappicon} alt="WhatsApp" title="EpsiWeb-User-Main" />
           </a>
         </Fab>
       </Box> 

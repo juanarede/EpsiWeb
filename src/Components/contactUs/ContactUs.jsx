@@ -20,7 +20,7 @@ function ContactUs() {
                         <br />
                         No hay problema...
                     </h2>
-                    <a className="btn btn-outline-light py-3 px-4 rounded-pill" href="#contact">Contáctanos</a>
+                    <a className="btn btn-outline-light py-3 px-4 rounded-pill" href="#contact" title='Contact'>Contáctanos</a>
                 </div>
             </div>
         </section>
