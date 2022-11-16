@@ -56,6 +56,7 @@ function AboutUs() {
                   </div>
                 </div>
                 <br />
+                <div className="container">
                 <div class="row">
                   <div class="col-4">
                     <svg
@@ -86,7 +87,9 @@ function AboutUs() {
                     </svg>
                   </div>
                 </div>
+                </div>
                 <br />
+                <div className="container">
                 <div class="row">
                   <div class="col-4"></div>
                   <div class="col-4">
@@ -99,6 +102,7 @@ function AboutUs() {
                     </svg>
                   </div>
                   <div class="col-4"></div>
+                </div>
                 </div>
               </div>
             </div>

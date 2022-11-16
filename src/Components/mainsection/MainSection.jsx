@@ -21,7 +21,7 @@ function MainSection() {
               data-aos="fade-left"
               className="col-lg-8 order-lg-1 mb-5 mb-lg-0"
             >
-              <div className="container-fluid px-5">
+              <div className="container px-5">
                 <div className="row gx-5">
                   <div className="col-md-6 mb-5">
                     <div className="text-center">
@@ -44,6 +44,7 @@ function MainSection() {
                     </div>
                   </div>
                 </div>
+                <div className='container'>
                 <div className="row">
                   <div className="col-md-6 mb-5 mb-md-0">
                     <div className="text-center">
@@ -65,6 +66,7 @@ function MainSection() {
                       </p>
                     </div>
                   </div>
+                </div>
                 </div>
               </div>
             </div>
