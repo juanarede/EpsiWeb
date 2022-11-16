@@ -175,7 +175,7 @@ useEffect(() => {
                   </p>
              
               <p  className="lead fw-normal text-muted mb-5 mb-lg-0">
-              <i  className="fa-solid fa-phone icon-feature text-gradient fs-5  ">+541132117480 / +5491165623938</i>
+              <i  className="fa-solid fa-phone icon-feature text-gradient fs-5  ">+541132117480 / +541165623938</i>
 
              
               

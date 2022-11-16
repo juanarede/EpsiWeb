@@ -21,7 +21,7 @@ function AboutUs() {
                 Queremos ayudarte a realizar ese sitio web que impulse tu
                 emprendimiento, contamos con el conocimiento de las principales
                 tecnologías y queremos demostrar nuestra capacidad con hechos,
-                no solo con palabras.
+                no solo con palabras. 
               </p>
             </div>
             <div className="col-12 col-lg-5">
