@@ -10,6 +10,8 @@
     background-image: url('../../assets/img/mountain.jpg');
     background-position: center;
     background-size: cover;
+  
+   
 }
 .montaña-bg .title-z {
     position: relative;
@@ -30,6 +32,8 @@
   .lead {
     color: #ffff;
   }
+
+  
   
   
 
