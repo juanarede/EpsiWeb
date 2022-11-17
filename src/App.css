@@ -51,6 +51,9 @@
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
 }
+html{
+  overflow-x: hidden;
+}
 
 * {
   -moz-box-sizing: border-box;
