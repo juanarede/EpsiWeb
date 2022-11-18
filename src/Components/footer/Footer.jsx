@@ -1,16 +1,30 @@
-import React ,{useState, Component}from 'react'
+import React ,{useState, Component, useRef}from 'react'
 import Politdepriv from '../politdepriv/Politdepriv';
 import Tyc from '../tyc/Tyc';
 import ContactImg from "../../assets/img/contactimg.png"
 import axios from 'axios';
+import Reaptcha from 'reaptcha';
 
+
+
+const REACT_APP_SITE_KEY = "6LdvBRIjAAAAAKbYKYh1CK2oQJwQWpMCzCkfS2bI";
 class Footer extends React.Component {
+ 
+
  state = {
     name:'',
     email:'',
     tel:'',
-    message:'Quiero recibir una cotización para mi próximo sitio web...'
+    message:'Quiero recibir una cotización para mi próximo sitio web...',
+    verified: false
+    
  }
+
+onVerify = recaptchaResponse =>{
+   this.setState({
+     verified: true
+   });
+} 
 
 handleChange = input =>e=>{
     this.setState({
@@ -22,6 +36,7 @@ handleChange = input =>e=>{
  let action = document.getElementById("action");
  let formu = document.getElementById("demo-form")
    e.preventDefault();
+   
  
   var request=axios({
      method: "post",
@@ -31,7 +46,8 @@ handleChange = input =>e=>{
        name: this.state.name,
        email: this.state.email,
        tel: this.state.tel,
-       message: this.state.message
+       message: this.state.message,
+       
      }
    }).then(result=>{
      if(result){
@@ -51,12 +67,15 @@ handleChange = input =>e=>{
  }
 
 render(){
+  
+  
   const {
 
     name,
     email,
     tel,
-    message
+    message,
+    
 
   }= this.state;
 
@@ -84,10 +103,16 @@ render(){
    <label for="msg" class="form-label text-start lead fw-normal  mb-3 mb-lg-0" style={{color:"#fff"}}>Mensaje</label>
    <textarea style={{height:"13rem"}} id="msg" name="mensaje" cols="30" rows="10" class="form-control lead fw-normal text-muted mb-5 mb-lg-0" required onChange={this.handleChange('message')} value={message}></textarea>
    <div class="d-grid gap-2">
-   
-   <button type="submit" value="Send" name="btn-enviar" class="btn my-button mt-2 " data-sitekey="6Lds0dMiAAAAAAxEhIKaGDsbqMvEkO_Gbvyjz5nK" data-callback='onSubmit' data-action='submit' title='Mensajeria'>Enviar </button>
+    
+    <Reaptcha
+    sitekey= {REACT_APP_SITE_KEY}
+    onVerify={this.onVerify}
+      
+    />
+   <button type="submit" value="Send" name="btn-enviar" class="btn my-button mt-2 " data-sitekey="6Lds0dMiAAAAAAxEhIKaGDsbqMvEkO_Gbvyjz5nK" data-callback='onSubmit' data-action='submit' title='Mensajeria' disabled={!this.state.verified}>Enviar </button>
    
     </div>
+   
     
     <div id="action"></div>
 

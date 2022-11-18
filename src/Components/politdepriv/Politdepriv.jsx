@@ -156,7 +156,7 @@ function Politdepriv() {
                 esta Política o deseas comunicarte con nosotros en relación con
                 cualquier asunto sobre los derechos individuales y tu
                 información personal, puedes enviarnos un correo electrónico a
-                helper-dev@epsiweb.com.{" "}
+                support_dev@epsiweb.com.{" "}
               </p>
             </div>
             <div class="modal-footer">
