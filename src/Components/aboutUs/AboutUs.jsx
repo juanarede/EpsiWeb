@@ -3,11 +3,22 @@ import React,{ useEffect } from "react";
 import "./aboutus.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useState } from "react";
+import Axios from "axios";
 
 function AboutUs() {
+  const[list, setList]=useState([]);
   useEffect(() => {
     Aos.init({ duration: 2000 });
-  }, []);
+    Axios({url: "http://localhost/EpsiWeb/api/contact/aboutus.php"})
+  .then((response)=>{
+    setList(response.data.aboutus[0]);
+    console.log(response.data.aboutus[0]);
+  })
+  .catch((error)=>{
+    console.log(error);
+  })
+  },[setList]);
   return (
     <>
       <section className="bg-light" id="aboutus">
@@ -15,13 +26,10 @@ function AboutUs() {
           <div className="row gx-5 align-items-center justify-content-center justify-content-lg-between">
             <div data-aos="fade-right" className=" col-sm-8 col-md-6 ">
               <h2 className="display-4 lh-1 mb-4">
-                Somos EpsiWeb: Miramos hacia adelante{" "}
+                {list.titulo1}{" "}
               </h2>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                Queremos ayudarte a realizar ese sitio web que impulse tu
-                emprendimiento, contamos con el conocimiento de las principales
-                tecnologías y queremos demostrar nuestra capacidad con hechos,
-                no solo con palabras. 
+                {list.parrafo1} 
               </p>
             </div>
             <div className="col-12 col-lg-5">
@@ -602,12 +610,10 @@ function AboutUs() {
             </div>
             <div data-aos="fade-left" className="col-sm-8 col-md-6">
               <h2 className="display-4 lh-1 mb-4">
-                Queremos lograr que tengas los mejores resultados{" "}
+                {list.titulo2}{" "}
               </h2>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                Sabemos de las tendencias actuales en material digital, es por
-                eso que nos mantenemos constantemente informados acerca de todas
-                las novedades y llevarlas a nuestros potenciales clientes.
+                {list.parrafo2}
               </p>
             </div>
           </div>
