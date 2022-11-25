@@ -6,12 +6,24 @@ import ecommerce from "../../assets/img/ecommerce.jpeg";
 import "./precio.css";
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import { useState } from "react";
+import Axios from "axios";
 
 
 function Precios() {
+  const[list, setList]=useState([]);
+
 useEffect(() => {
   Aos.init({ duration: 2000 });
-}, []);
+  Axios({url: "http://localhost/EpsiWeb/api/contact/precios.php"})
+  .then((response)=>{
+    setList(response.data.precios[0]);
+    console.log(response.data.precios[0]);
+  })
+  .catch((error)=>{
+    console.log(error);
+  })
+}, [setList]);
 
 
 
@@ -20,14 +32,15 @@ useEffect(() => {
     <>
     
       <div className="bg-light" id="precios">
+        
         <div className="container container-card">
           <div className="row gx-5 justify-content-center"  data-aos="fade-right">
             <div className="col-xl-8 text-mid">
-              <div className="h2 fs-1 text-black  ">
-                Elegí el plan que se adapte a tus necesidades
+              <div className="h2 fs-1 text-black">
+                {list.titulo}
               </div>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-               Una vez que hayas seleccionado una opción nos pondremos en contacto. 
+                {list.parrafo}
               </p>
             </div>
           </div>
@@ -49,14 +62,14 @@ useEffect(() => {
                     className="card-title display-4 lh-1 mb-4 titulo-card "
                   >
                     {" "}
-                    Landing Page
+                    {list.opcion1}
                   </h4>
                   <h4
                     style={{ fontSize: "1.8rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ 13.000,00
+                    AR$ {list.precio1}
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
@@ -70,7 +83,7 @@ useEffect(() => {
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                    Ideal para presentar tu negocio o algo de tu interés, podrás promocionar tu marca y atraer mas clientes potenciales, con diseño responsive. Tu sitio mas seguro con certificado SSL.
+                    {list.descripcion1}
                   </p>
 
                   
@@ -97,14 +110,14 @@ useEffect(() => {
                     className="card-title display-4 lh-1 mb-4 titulo-card "
                   >
                     {" "}
-                    Web Basic
+                    {list.opcion2}
                   </h4>
                   <h4
                     style={{ fontSize: "1.8rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ 20.000,00
+                    AR$ {list.precio2}
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
@@ -117,7 +130,7 @@ useEffect(() => {
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                   Sitio web para pequeñas tiendas, capacidad para hasta 20 imagenes con 4 secciones distintas, con diseño responsive. Tu sitio mas seguro con certificado SSL.
+                   {list.descripcion2}
                   </p>
                   <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Web Basic ▶ ...podrían darme mas detalles?🤔" target="new" title="WhatsApp-Link-2"><button style={{marginTop:"3rem"}} className="my-button"> Empezar</button></a>
                 </div>
@@ -139,14 +152,14 @@ useEffect(() => {
                     className="card-title titulo-card display-4 lh-1 mb-4 "
                   >
                     {" "}
-                    E-commerce
+                    {list.opcion3}
                   </h4>
                   <h4
                     style={{ fontSize: "1.8rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ Consultar
+                    AR$ {list.precio3}
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
@@ -159,7 +172,7 @@ useEffect(() => {
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                    Tu tienda online, con varias secciones e imagenes segun tus requerimientos, plataforma de pagos (Mercado Pago) y, por supuesto, diseño responsive. Potencia tus ventas de la forma mas profesional. Tu sitio web mas seguro con certificado SSL.
+                    {list.descripcion3}
                   </p>
                   <a  href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi E-Commerce ▶ ...podrían darme mas detalles?🤔" target="new" title="WhatsApp-Link-3"><button className="my-button"> Empezar</button></a>
                 </div>
@@ -187,9 +200,9 @@ useEffect(() => {
           </div> 
         </div>
         </div>
-        
+       
       </div>
-     
+    
     
     </>
   );
