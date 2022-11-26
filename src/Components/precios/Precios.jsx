@@ -18,7 +18,7 @@ useEffect(() => {
   Axios({url: "http://localhost/EpsiWeb/api/contact/precios.php"})
   .then((response)=>{
     setList(response.data.precios[0]);
-    console.log(response.data.precios[0]);
+    
   })
   .catch((error)=>{
     console.log(error);

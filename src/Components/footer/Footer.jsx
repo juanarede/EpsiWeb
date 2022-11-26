@@ -2,8 +2,9 @@ import React ,{useState, Component, useRef}from 'react'
 import Politdepriv from '../politdepriv/Politdepriv';
 import Tyc from '../tyc/Tyc';
 import ContactImg from "../../assets/img/contactimg.png"
-import axios from 'axios';
+import axios, { Axios } from 'axios';
 import Reaptcha from 'reaptcha';
+
 
 
 
@@ -16,7 +17,8 @@ class Footer extends React.Component {
     email:'',
     tel:'',
     message:'Quiero recibir una cotización para mi próximo sitio web...',
-    verified: false
+    verified: false,
+    list:[]
     
  }
 
@@ -56,7 +58,8 @@ handleChange = input =>e=>{
        this.setState({
          name:'',
          email:'',
-         tel:''
+         tel:'',
+         
        })
      }else{
        action.innerHTML= "<div class='alert alert-warning' role='alert'>Error al enviar</div>";
@@ -64,6 +67,21 @@ handleChange = input =>e=>{
    })
  
    console.log(request);
+ }
+
+ //Contenido de la Base de datos
+ componentDidMount(){
+  axios({url:"http://localhost/EpsiWeb/api/contact/footer.php"})
+  .then((response)=>{
+    this.setState({
+      list:response.data.footer[0]
+    })
+    console.log(response.data.footer[0]);
+  })
+    .catch((error)=>{
+      console.log(error);
+    })
+  
  }
 
 render(){
@@ -75,6 +93,7 @@ render(){
     email,
     tel,
     message,
+    list
     
 
   }= this.state;
@@ -84,7 +103,7 @@ render(){
       <section className="bg-gradient-primary-to-secondary">
         <div className="container px-5">
           <h2 className="text-center text-white font-alt mb-4">
-            Esperamos poder trabajar juntos!
+            {list.titulo}
           </h2>
         </div>
       </section>
@@ -125,13 +144,13 @@ render(){
       <img class="img-fluid d-none d-md-block" style={{width:"35.8rem",marginLeft:"2rem"}} src={ContactImg} title="EpsiWeb-Footer" alt="Movil-Screen" />
     <hr style={{color:"#fff"}} className="m-b4" />
       
-      <p style={{color:"#fff"}} class="text-start">Podes otórganos algunos detalles acerca de tu emprendimiento, o asunto de tu interés. Tu próximo sitio web debe llegar al publico realmente interesado con lo que ofreces. Con la información que nos puedas brindar podremos crear el estilo ideal para ese proyecto que tienes en mente.</p>
+      <p style={{color:"#fff"}} class="text-start">{list.parrafo1}</p>
       <hr style={{color:"#fff"}} className="m-b4" />
 
       
     
         <div className="text-center text-white font-alt ">
-            Seguinos en Nuestras Redes!!
+            {list.parrafo2}
           </div>
           <a href="https://www.facebook.com/profile.php?id=100086997386336" target="new" title='Facebook-Link'>
           <i

@@ -13,7 +13,7 @@ function ContactUs() {
     Axios({url: "http://localhost/EpsiWeb/api/contact/contactus.php"})
   .then((response)=>{
     setList(response.data.contactus[0]);
-    console.log(response.data.contactus[0]);
+    
   })
   .catch((error)=>{
     console.log(error);
