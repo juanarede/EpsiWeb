@@ -5,13 +5,23 @@ import './mainsection.css'
 
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import Axios from "axios";
+import { useState } from "react";
 
 function MainSection() {
-
+  const[list, setList]=useState([]);
     useEffect(() => {
-        Aos.init({duration: 2000})
+        Aos.init({duration: 2000});
+        Axios({url: "http://localhost/EpsiWeb/api/contact/mainsection.php"})
+  .then((response)=>{
+    setList(response.data.mainsection[0]);
+    
+  })
+  .catch((error)=>{
+    console.log(error);
+  })
      
-     }, []);
+     }, [setList]);
   return (
     <>
       <section id="service">
@@ -26,20 +36,18 @@ function MainSection() {
                   <div className="col-md-6 mb-5">
                     <div className="text-center">
                       <i className="bi-phone icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">Diseño web Responsive</h3>
+                      <h3 className="font-alt">{list.titulo1}</h3>
                       <p className="text-muted mb-0">
-                        Tu sitio web en cualquier dispositivo con la mejor
-                        calidad visual.
+                        {list.parrafo1}
                       </p>
                     </div>
                   </div>
                   <div className="col-md-6 mb-5">
                     <div className="text-center">
                     <i class="bi bi-people-fill icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">Integración de Social Login</h3>
+                      <h3 className="font-alt">{list.titulo2}</h3>
                       <p className="text-muted mb-0">
-                        Añadimos metodos de autenticación a tu pagina web, por
-                        medio de las principales redes sociales.
+                        {list.parrafo2}
                       </p>
                     </div>
                   </div>
@@ -49,9 +57,9 @@ function MainSection() {
                   <div className="col-md-6 mb-5 mb-md-0">
                     <div className="text-center">
                     <i class="bi bi-cash-coin icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">Plataformas de pagos</h3>
+                      <h3 className="font-alt">{list.titulo3}</h3>
                       <p className="text-muted mb-0">
-                        Incorporamos distintas plataformas de pago para los{" "}
+                        {list.parrafo3}{" "}
                         <strong>e-commerce</strong>.
                       </p>
                     </div>
@@ -59,10 +67,10 @@ function MainSection() {
                   <div className="col-md-6">
                     <div className="text-center">
                     <i class="bi bi-graph-up icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">Posicionamiento SEO</h3>
+                      <h3 className="font-alt">{list.titulo4}</h3>
                       <p className="text-muted mb-0">
-                        Hacemos llegar tu sitio web al público indicado con{" "}
-                        <strong>Google</strong> y su motor de búsqueda.
+                        {list.parrafo4}{" "}
+                        <strong>Google</strong>
                       </p>
                     </div>
                   </div>
