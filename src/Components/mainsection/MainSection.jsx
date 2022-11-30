@@ -9,19 +9,19 @@ import Axios from "axios";
 import { useState } from "react";
 
 function MainSection() {
-  const[list, setList]=useState([]);
+ // const[list, setList]=useState([]);
     useEffect(() => {
         Aos.init({duration: 2000});
-        Axios({url: "http://localhost/EpsiWeb/api/contact/mainsection.php"})
+       /* Axios({url: "http://localhost/EpsiWeb/api/contact/mainsection.php"})
   .then((response)=>{
     setList(response.data.mainsection[0]);
     
   })
   .catch((error)=>{
     console.log(error);
-  })
+  })*/
      
-     }, [setList]);
+     }, [/*setList*/]);
   return (
     <>
       <section id="service">
@@ -36,18 +36,18 @@ function MainSection() {
                   <div className="col-md-6 mb-5">
                     <div className="text-center">
                       <i className="bi-phone icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">{list.titulo1}</h3>
+                      <h3 className="font-alt">{/*list.titulo1*/}asdasd</h3>
                       <p className="text-muted mb-0">
-                        {list.parrafo1}
+                        {/*list.parrafo1*/}asdas
                       </p>
                     </div>
                   </div>
                   <div className="col-md-6 mb-5">
                     <div className="text-center">
                     <i class="bi bi-people-fill icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">{list.titulo2}</h3>
+                      <h3 className="font-alt">{/*list.titulo2*/}sdasd</h3>
                       <p className="text-muted mb-0">
-                        {list.parrafo2}
+                        {/*list.parrafo2*/}sdsadas
                       </p>
                     </div>
                   </div>
@@ -57,9 +57,9 @@ function MainSection() {
                   <div className="col-md-6 mb-5 mb-md-0">
                     <div className="text-center">
                     <i class="bi bi-cash-coin icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">{list.titulo3}</h3>
+                      <h3 className="font-alt">{/*list.titulo3*/}dasdas</h3>
                       <p className="text-muted mb-0">
-                        {list.parrafo3}{" "}
+                        {/*list.parrafo3*/}sadasd{" "}
                         <strong>e-commerce</strong>.
                       </p>
                     </div>
@@ -67,9 +67,9 @@ function MainSection() {
                   <div className="col-md-6">
                     <div className="text-center">
                     <i class="bi bi-graph-up icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">{list.titulo4}</h3>
+                      <h3 className="font-alt">{/*list.titulo4*/}dasdasd</h3>
                       <p className="text-muted mb-0">
-                        {list.parrafo4}{" "}
+                        {/*list.parrafo4*/}dasdas{" "}
                         <strong>Google</strong>
                       </p>
                     </div>

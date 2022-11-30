@@ -6,24 +6,24 @@ import Axios from "axios";
 import { useState } from "react";
 
 function Header() {
-  const[list, setList]=useState([]);
-  Axios({url: "http://localhost/EpsiWeb/api/contact/header.php"})
+  //const[list, setList]=useState([]);
+  /*Axios({url: "http://localhost/EpsiWeb/api/contact/header.php"})
   .then((response)=>{
     setList(response.data.header[0]);
     
   })
   .catch((error)=>{
     console.log(error);
-  })
+  })*/
   return (
     <header className="masthead montaña-bg">
       <div className="container px-5">
         <div className="row gx-5 align-items-center">
           <div className="col-lg-6 title-header">
             <div className="mb-5 mb-lg-0 text-center text-lg-start title-z">
-              <h1 className="display-1 lh-1 mb-3">{list.titulo}</h1>
+              <h1 className="display-1 lh-1 mb-3">{/*list.titulo*/}dasdasd</h1>
               <p   className="lead fw-normal  mb-5" >
-                {list.parrafo}
+                {/*list.parrafo*/}sadasd
               </p>
             </div>
           </div>

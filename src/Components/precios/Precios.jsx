@@ -11,19 +11,19 @@ import Axios from "axios";
 
 
 function Precios() {
-  const[list, setList]=useState([]);
+  //const[list, setList]=useState([]);
 
 useEffect(() => {
   Aos.init({ duration: 2000 });
-  Axios({url: "http://localhost/EpsiWeb/api/contact/precios.php"})
+  /*Axios({url: "http://localhost/EpsiWeb/api/contact/precios.php"})
   .then((response)=>{
     setList(response.data.precios[0]);
     
   })
   .catch((error)=>{
     console.log(error);
-  })
-}, [setList]);
+  })*/
+}, [/*setList*/]);
 
 
 
@@ -37,10 +37,10 @@ useEffect(() => {
           <div className="row gx-5 justify-content-center"  data-aos="fade-right">
             <div className="col-xl-8 text-mid">
               <div className="h2 fs-1 text-black">
-                {list.titulo}
+                {/*list.titulo*/}dasdasd
               </div>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                {list.parrafo}
+                {/*list.parrafo*/}sadasdas
               </p>
             </div>
           </div>
@@ -62,14 +62,14 @@ useEffect(() => {
                     className="card-title display-4 lh-1 mb-4 titulo-card "
                   >
                     {" "}
-                    {list.opcion1}
+                    {/*list.opcion1*/}dasdasd
                   </h4>
                   <h4
                     style={{ fontSize: "1.8rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ {list.precio1}
+                    AR$ {/*list.precio1*/}dasdas
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
@@ -83,7 +83,7 @@ useEffect(() => {
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                    {list.descripcion1}
+                    {/*list.descripcion1*/}dasdasd
                   </p>
 
                   
@@ -110,14 +110,14 @@ useEffect(() => {
                     className="card-title display-4 lh-1 mb-4 titulo-card "
                   >
                     {" "}
-                    {list.opcion2}
+                    {/*list.opcion2*/}dasdas
                   </h4>
                   <h4
                     style={{ fontSize: "1.8rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ {list.precio2}
+                    AR$ {/*list.precio2*/}dasdasd
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
@@ -130,7 +130,7 @@ useEffect(() => {
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                   {list.descripcion2}
+                   {/*list.descripcion2*/}asdasd
                   </p>
                   <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Web Basic ▶ ...podrían darme mas detalles?🤔" target="new" title="WhatsApp-Link-2"><button style={{marginTop:"3rem"}} className="my-button"> Empezar</button></a>
                 </div>
@@ -152,14 +152,14 @@ useEffect(() => {
                     className="card-title titulo-card display-4 lh-1 mb-4 "
                   >
                     {" "}
-                    {list.opcion3}
+                    {/*list.opcion3*/}dasdasd
                   </h4>
                   <h4
                     style={{ fontSize: "1.8rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ {list.precio3}
+                    AR$ {/*list.precio3*/}asdasdas
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
@@ -172,7 +172,7 @@ useEffect(() => {
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                    {list.descripcion3}
+                    {/*list.descripcion3*/}sdasdas
                   </p>
                   <a  href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi E-Commerce ▶ ...podrían darme mas detalles?🤔" target="new" title="WhatsApp-Link-3"><button className="my-button"> Empezar</button></a>
                 </div>

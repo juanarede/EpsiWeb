@@ -18,7 +18,7 @@ class Footer extends React.Component {
     tel:'',
     message:'Quiero recibir una cotización para mi próximo sitio web...',
     verified: false,
-    list:[]
+    //list:[]
     
  }
 
@@ -70,7 +70,7 @@ handleChange = input =>e=>{
  }
 
  //Contenido de la Base de datos
- componentDidMount(){
+ /*componentDidMount(){
   axios({url:"http://localhost/EpsiWeb/api/contact/footer.php"})
   .then((response)=>{
     this.setState({
@@ -82,7 +82,7 @@ handleChange = input =>e=>{
       console.log(error);
     })
   
- }
+ }*/
 
 render(){
   
@@ -103,7 +103,7 @@ render(){
       <section className="bg-gradient-primary-to-secondary">
         <div className="container px-5">
           <h2 className="text-center text-white font-alt mb-4">
-            {list.titulo}
+            {/*list.titulo*/}
           </h2>
         </div>
       </section>
@@ -144,13 +144,13 @@ render(){
       <img class="img-fluid d-none d-md-block" style={{width:"35.8rem",marginLeft:"2rem"}} src={ContactImg} title="EpsiWeb-Footer" alt="Movil-Screen" />
     <hr style={{color:"#fff"}} className="m-b4" />
       
-      <p style={{color:"#fff"}} class="text-start">{list.parrafo1}</p>
+      <p style={{color:"#fff"}} class="text-start">{/*list.parrafo1*/}sadasdas</p>
       <hr style={{color:"#fff"}} className="m-b4" />
 
       
     
         <div className="text-center text-white font-alt ">
-            {list.parrafo2}
+            {/*list.parrafo2*/}dsasdas
           </div>
           <a href="https://www.facebook.com/profile.php?id=100086997386336" target="new" title='Facebook-Link'>
           <i

@@ -7,18 +7,18 @@ import { useState } from "react";
 import Axios from "axios";
 
 function AboutUs() {
-  const[list, setList]=useState([]);
+  //const[list, setList]=useState([]);
   useEffect(() => {
     Aos.init({ duration: 2000 });
-    Axios({url: "http://localhost/EpsiWeb/api/contact/aboutus.php"})
+  /*  Axios({url: "http://localhost/EpsiWeb/api/contact/aboutus.php"})
   .then((response)=>{
     setList(response.data.aboutus[0]);
     
   })
   .catch((error)=>{
     console.log(error);
-  })
-  },[setList]);
+  })*/
+  },[/*setList*/]);
   return (
     <>
       <section className="bg-light" id="aboutus">
@@ -26,10 +26,10 @@ function AboutUs() {
           <div className="row gx-5 align-items-center justify-content-center justify-content-lg-between">
             <div data-aos="fade-right" className=" col-sm-8 col-md-6 ">
               <h2 className="display-4 lh-1 mb-4">
-                {list.titulo1}{" "}
+                {/*list.titulo1*/}dasdasd{" "}
               </h2>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                {list.parrafo1} 
+                {/*list.parrafo1*/} fsdfsdf
               </p>
             </div>
             <div className="col-12 col-lg-5">
@@ -610,10 +610,10 @@ function AboutUs() {
             </div>
             <div data-aos="fade-left" className="col-sm-8 col-md-6">
               <h2 className="display-4 lh-1 mb-4">
-                {list.titulo2}{" "}
+                {/*list.titulo2*/}dasdasd{" "}
               </h2>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                {list.parrafo2}
+                {/*list.parrafo2*/}dasdasd
               </p>
             </div>
           </div>

@@ -7,19 +7,19 @@ import { useState } from "react";
 import Axios from "axios";
 
 function ContactUs() {
-  const[list, setList]=useState([]);
+ // const[list, setList]=useState([]);
   useEffect(() => {
     Aos.init({duration: 2000});
-    Axios({url: "http://localhost/EpsiWeb/api/contact/contactus.php"})
+    /*Axios({url: "http://localhost/EpsiWeb/api/contact/contactus.php"})
   .then((response)=>{
     setList(response.data.contactus[0]);
     
   })
   .catch((error)=>{
     console.log(error);
-  })
+  })*/
  
- }, [setList]);
+ }, [/*setList*/]);
   return (
     <>
    
@@ -29,9 +29,9 @@ function ContactUs() {
             <div className="cta-content">
                 <div data-aos="fade-right" className="container px-5">
                     <h2 className="text-white display-1 lh-1 mb-4">
-                    {list.titulo}
+                    {/*list.titulo*/}asdasdas
                         <br />
-                    {list.parrafo}
+                    {/*list.parrafo*/}dasdasd
                     </h2>
                     <a className="btn btn-outline-light py-3 px-4 rounded-pill" href="#contact" title='Contact'>Contáctanos</a>
                 </div>

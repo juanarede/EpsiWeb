@@ -9,20 +9,20 @@ import { useState } from "react";
 
 function MidSection() {
 
-  const[list, setList]=useState([]);
+ // const[list, setList]=useState([]);
   
   useEffect(() => {
     Aos.init({duration: 2000});
-    Axios({url: "http://localhost/EpsiWeb/api/contact/midsection.php"})
+    /*Axios({url: "http://localhost/EpsiWeb/api/contact/midsection.php"})
     .then((response)=>{
       setList(response.data.midsection[0]);
       
     })
     .catch((error)=>{
       console.log(error);
-    })
+    })*/
  
- }, [setList]);
+ }, [/*setList*/]);
   return (
     <>
       <div className='mid-section'>
@@ -30,7 +30,7 @@ function MidSection() {
             <div className="container px-5">
                 <div className="row gx-5 justify-content-center">
                     <div className="col-xl-8 text-mid">
-                        <div data-aos="fade-right" className="h2 fs-1 text-white mb-4 ">{list.parrafo}</div>
+                        <div data-aos="fade-right" className="h2 fs-1 text-white mb-4 ">{/*list.parrafo*/}dsadas</div>
                         <img className='logomid' src={logowithe} alt="EpsiWeb-Logo"  title='EpsiWeb-Mid'/>
                     </div>
                 </div>
