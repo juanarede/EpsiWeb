@@ -3,6 +3,9 @@ import React, {useState} from 'react';
 import logoWithe from '../../assets/img/logowithe.png'
 import './navbar.css'
 
+import espanaFlag from '../../assets/img/espanaflag.png'
+import ukFlag from '../../assets/img/ukflag.png'
+
 
 
 
@@ -46,6 +49,8 @@ const changeBackground = () => {
     <div className="container px-5">
        
         <a className="navbar-brand fw-bold" href="#page-top" title='Top-Page'><img className='logonav' src={logoWithe} alt="Logo" title='Logo'/></a>
+        <a className="navbar-brand fw-bold" href="#" title='Top-Page'><img  src={espanaFlag} alt="Logo" title='EspañaLogo'/></a>
+        <a className="navbar-brand fw-bold" href="#" title='Top-Page'><img  src={ukFlag} alt="Logo" title='UkLogo'/></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i className="bi-list"></i>

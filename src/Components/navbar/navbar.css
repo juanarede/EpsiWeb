@@ -32,7 +32,7 @@ a.my-button{
     background: linear-gradient(to right,#c879fd ,#6433E0);
     background-color: #c879fd;
     color: #fff;
-   
+    width: 100%;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
