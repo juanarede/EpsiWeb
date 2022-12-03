@@ -46,7 +46,7 @@ const changeBackground = () => {
             }
       } className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
    
-    <div className="container px-5">
+    <div className="container d-flex justify-content-center">
        
         <a className="navbar-brand fw-bold" href="#page-top" title='Top-Page'><img className='logonav' src={logoWithe} alt="Logo" title='Logo'/></a>
         <a className="navbar-brand fw-bold" href="#" title='Top-Page'><img  src={espanaFlag} alt="Logo" title='EspañaLogo'/></a>
