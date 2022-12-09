@@ -11,6 +11,8 @@ import logofacebook from "../../assets/img/facebook.png"
 import logoinstagram from "../../assets/img/instagram.png"
 import logolinkedin from "../../assets/img/linkedin.png"
 
+import {FormattedMessage} from 'react-intl';
+
 const REACT_APP_SITE_KEY = "6LdvBRIjAAAAAKbYKYh1CK2oQJwQWpMCzCkfS2bI";
 class Footer extends React.Component {
   state = {
@@ -51,7 +53,7 @@ class Footer extends React.Component {
       },
     }).then((result) => {
       if (result) {
-        action.innerHTML = `<div class='alert alert-success' role='alert'>Muchas gracias ${this.state.name} ! Estaremos respondiendo a la brevedad</div>`;
+        action.innerHTML = `<div class='alert alert-success' role='alert'>Muchas gracias ${this.state.name} ! Estaremos respondiendo a la brevedad'</div>`;
         this.setState({
           name: "",
           email: "",
@@ -82,7 +84,7 @@ class Footer extends React.Component {
  }*/
 
   render() {
-    const { name, email, tel, message, list } = this.state;
+    const { name, email, tel, message, /*list*/} = this.state;
 
     return (
       <>
@@ -97,12 +99,18 @@ class Footer extends React.Component {
                   <img className="d-flex justify-content-start" style={{width:"10rem", marginBottom:"1rem"}} src={EpsiLogo} alt=""/>
 
                   <p style={{ color: "#fff" }} class="text-start">
-                    {/*list.parrafo1*/}sadasdas
+                    <FormattedMessage
+                    id="footer.parrafo1"
+                    defaultMessage="Empecemos a trabajar juntos en tu próximo sitio web, no dudes en contactarnos."
+                    />
                   </p>
                   <hr style={{ color: "#fff" }} className="m-b4" />
 
                   <div className="text-center text-white font-alt ">
-                    {/*list.parrafo2*/}dsasdas
+                    <FormattedMessage
+                    id="footer.parrafo2"
+                    defaultMessage="Visítanos en nuestras redes sociales"
+                    />
                   </div>
                  <div style={{marginTop:"1rem"}}>
                   <a
@@ -135,7 +143,10 @@ class Footer extends React.Component {
                     style={{ color: "#fff", fontSize: "2rem" }}
                     class="  text-start  card-title display-4 lh-1  "
                   >
-                    Contacto
+                    <FormattedMessage
+                    id="footer.contact"
+                    defaultMessage="Contacto"
+                    />
                   </h6>
                   <hr
                 class="mb-4 mt-0   "
@@ -153,9 +164,24 @@ class Footer extends React.Component {
                     info@epsiweb.com
                   </p>
                   <div style={{marginTop:"5rem"}}>
-                  <a style={{textDecoration:"none"}} class="nav-link me-lg-3 text-start text-uppercase fw-bold" href="#service" title='Service'>Servicios</a>
-                <a style={{textDecoration:"none"}} class="nav-link me-lg-3  text-start text-uppercase fw-bold" href="#aboutus" title='About'>Quienes Somos</a>
-                <a style={{textDecoration:"none"}} class="nav-link me-lg-3 text-start text-uppercase fw-bold" href="#precios" title='Price'>Diseño Web Precios</a>
+                  <a style={{textDecoration:"none"}} class="nav-link me-lg-3 text-start text-uppercase fw-bold" href="#service" title='Service'>
+                    <FormattedMessage
+                    id="footer.services"
+                    defaultMessage="Servicios"
+                    />
+                  </a>
+                <a style={{textDecoration:"none"}} class="nav-link me-lg-3  text-start text-uppercase fw-bold" href="#aboutus" title='About'>
+                  <FormattedMessage
+                  id="footer.aboutus"
+                  defaultMessage="Quienes Somos"
+                  />
+                </a>
+                <a style={{textDecoration:"none"}} class="nav-link me-lg-3 text-start text-uppercase fw-bold" href="#precios" title='Price'>
+                  <FormattedMessage
+                  id="footer.price"
+                  defaultMessage="Diseño web"
+                  />
+                </a>
                 </div>
                 </div>
                
@@ -165,7 +191,10 @@ class Footer extends React.Component {
                     style={{ color: "#fff", fontSize: "2rem" }}
                     class="text-start  card-title display-4 lh-1  "
                   >
-                    Como te ayudamos:
+                    <FormattedMessage
+                    id="footer.help"
+                    defaultMessage="Como te ayudamos:"
+                    />
                   </h4>
                   <hr
                 class="mb-4 mt-0   "
@@ -212,7 +241,10 @@ class Footer extends React.Component {
                       class="form-label text-start lead fw-normal   mb-lg-0"
                       style={{ color: "#fff" }}
                     >
-                      Mensaje
+                      <FormattedMessage
+                      id="footer.msg"
+                      defaultMessage="Mensaje"
+                      />
                     </label>
                     <textarea
                       style={{ height: "6rem" }}
@@ -242,7 +274,10 @@ class Footer extends React.Component {
                         title="Mensajeria"
                         disabled={!this.state.verified}
                       >
-                        Enviar{" "}
+                        <FormattedMessage
+                        id="footer.btn"
+                        defaultMessage="Enviar"
+                        />{" "}
                       </button>
                     </div>
 
@@ -282,7 +317,10 @@ class Footer extends React.Component {
                         data-bs-target="#staticBackdrop"
                         title="Terms-Cond"
                       >
-                        Términos y Condiciones
+                        <FormattedMessage
+                        id="footer.tc"
+                        defaultMessage="Términos y condiciones"
+                        />
                       </a>
                       <a
                         className="text-white-50"
@@ -296,7 +334,10 @@ class Footer extends React.Component {
                         data-bs-target="#staticBackdropp"
                         title="Priv-Pol"
                       >
-                        Política de Privacidad
+                        <FormattedMessage
+                        id="footer.pp"
+                        defaultMessage="Política de privacidad"
+                        />
                       </a>
                     </div>
                   </div>

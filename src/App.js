@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useContext} from 'react';//Usamos el contexto
 import './App.css';
 import UserMain from './Components/userMain/UserMain';
+import {langContext} from './context/langContext';
+
+
+
+import {IntlProvider} from 'react-intl';
 
 
 function App() {
+  const idioma = useContext(langContext);
+  
   const queryString = window.location.search;
   console.log(queryString);
+  
 
   //Cuando se redirije desde el servidor
   if(queryString === '?ok=send'){
@@ -14,10 +22,12 @@ function App() {
   }
 
   return (
+    
     <div className="App">
      
    <UserMain/>
     </div>
+    
   );
 }
 

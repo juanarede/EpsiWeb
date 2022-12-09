@@ -6,8 +6,10 @@ import ecommerce from "../../assets/img/ecommerce.jpeg";
 import "./precio.css";
 import Aos from 'aos'
 import "aos/dist/aos.css"
-import { useState } from "react";
-import Axios from "axios";
+//import { useState } from "react";
+//import Axios from "axios";
+
+import {FormattedMessage} from 'react-intl';
 
 
 function Precios() {
@@ -37,10 +39,16 @@ useEffect(() => {
           <div className="row gx-5 justify-content-center"  data-aos="fade-right">
             <div className="col-xl-8 text-mid">
               <div className="h2 fs-1 text-black">
-                {/*list.titulo*/}dasdasd
+                <FormattedMessage
+                id="precios.titulo"
+                defaultMessage="Elegí el plan que mejor se adapte a tus necesidades"
+                />
               </div>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                {/*list.parrafo*/}sadasdas
+                <FormattedMessage
+                id="precios.parrafo"
+                defaultMessage="Una vez que hayas seleccionado una opción, nos pondremos en contacto."
+                />
               </p>
             </div>
           </div>
@@ -62,32 +70,53 @@ useEffect(() => {
                     className="card-title display-4 lh-1 mb-4 titulo-card "
                   >
                     {" "}
-                    {/*list.opcion1*/}dasdasd
+                    <FormattedMessage
+                    id="precios.opcion1"
+                    defaultMessage="Landing Page"
+                    />
                   </h4>
                   <h4
                     style={{ fontSize: "1.8rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ {/*list.precio1*/}dasdas
+                    AR$ <FormattedMessage
+                    id="precios.precio1"
+                    defaultMessage="13.000,00"
+                    />
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
                     className="card-text mb-5 mb-lg-0 hosting"
                   >
-                    Hosting Gratis y{" "}
-                    <span style={{ display: "block" }}>Dominio por 1 año</span>
+                    <FormattedMessage
+                    id="precios.promo1"
+                    defaultMessage="Hosting gratis y"
+                    />{" "}
+                    <span style={{ display: "block" }}>
+                      <FormattedMessage
+                      id="precios.promo2"
+                      defaultMessage="Dominio por 1 año"
+                      />
+                      </span>
                   </p>
 
                   <p
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                    {/*list.descripcion1*/}dasdasd
+                    <FormattedMessage
+                    id="precios.desc1"
+                    defaultMessage="Diseño simple y estático, ideal para presentar tu marca y atraer más potenciales clientes a tu cartera de trabajo. La mejor optimización y seguridad con certificado SSL."
+                    />
                   </p>
 
                   
-                  <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Landing Page ▶ ...podrían darme mas detalles?🤔" target="new" title="WhatsApp-Link-1"><button style={{marginTop:"3rem"}} className="my-button"> Empezar</button></a>
+                  <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Landing Page ▶ ...podrían darme mas detalles?🤔" target="new" title="WhatsApp-Link-1"><button style={{marginTop:"3rem"}} className="my-button">
+                    <FormattedMessage
+                    id="precio.btn"
+                    defaultMessage="Empezar"
+                  /></button></a>
                   
 
                 </div>
@@ -110,29 +139,51 @@ useEffect(() => {
                     className="card-title display-4 lh-1 mb-4 titulo-card "
                   >
                     {" "}
-                    {/*list.opcion2*/}dasdas
+                    <FormattedMessage
+                    id="precios.opcion2"
+                    defaultMessage="Web Basic"
+                    />
                   </h4>
                   <h4
                     style={{ fontSize: "1.8rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ {/*list.precio2*/}dasdasd
+                    AR$ <FormattedMessage
+                    id="precios.precio2"
+                    defaultMessage="20.000,00"
+                    />
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
                     className="card-text mb-5 mb-lg-0 hosting"
                   >
-                    Hosting Gratis y{" "}
-                    <span style={{ display: "block" }}>Dominio por 1 año</span>
+                    <FormattedMessage
+                    id="precios.promo1"
+                    defaultMessage="Hosting gratis y"
+                    />{" "}
+                    <span style={{ display: "block" }}>
+                      <FormattedMessage
+                      id="precios.promo2"
+                      defaultMessage="Dominio por 1 año"
+                      />
+                    </span>
                   </p>
                   <p
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                   {/*list.descripcion2*/}asdasd
+                   <FormattedMessage
+                   id="precios.desc2"
+                   defaultMessage="Sitios web para pequeñas tiendas, capacidad para 20 imágenes distribuidas en hasta 4 secciones. La mejor optimización y seguridad con certificado SSL."
+                   />
                   </p>
-                  <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Web Basic ▶ ...podrían darme mas detalles?🤔" target="new" title="WhatsApp-Link-2"><button style={{marginTop:"3rem"}} className="my-button"> Empezar</button></a>
+                  <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Web Basic ▶ ...podrían darme mas detalles?🤔" target="new" title="WhatsApp-Link-2"><button style={{marginTop:"3rem"}} className="my-button">
+                    <FormattedMessage
+                    id="precios.btn"
+                    defaultMessage="Empezar"
+                    />
+                    </button></a>
                 </div>
               </div>
             </div>
@@ -152,29 +203,51 @@ useEffect(() => {
                     className="card-title titulo-card display-4 lh-1 mb-4 "
                   >
                     {" "}
-                    {/*list.opcion3*/}dasdasd
+                    <FormattedMessage
+                    id="precios.opcion3"
+                    defaultMessage="E-Commerce"
+                    />
                   </h4>
                   <h4
                     style={{ fontSize: "1.8rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0  pb-3 "
                   >
                     {" "}
-                    AR$ {/*list.precio3*/}asdasdas
+                    AR$ <FormattedMessage
+                    id="precios.precio3"
+                    defaultMessage="Consultar"
+                    />
                   </h4>
                   <p
                     style={{ fontSize: "1.3rem" }}
                     className="card-text mb-5 mb-lg-0 hosting"
                   >
-                    Hosting Gratis y{" "}
-                    <span style={{ display: "block" }}>Dominio por 1 año</span>
+                    <FormattedMessage
+                    id="precios.promo1"
+                    defaultMessage="Hosting Gratis y"
+                    />{" "}
+                    <span style={{ display: "block" }}>
+                      <FormattedMessage
+                      id="precios.promo2"
+                      defaultMessage="Dominio por 1 año"
+                      />
+                    </span>
                   </p>
                   <p
                     style={{ fontSize: "1rem" }}
                     className="card-text lead fw-normal text-muted mb-5 mb-lg-0"
                   >
-                    {/*list.descripcion3*/}sdasdas
+                    <FormattedMessage
+                    id="precios.desc3"
+                    defaultMessage="Tu tienda online más completa, variedad de secciones e imágenes, plataformas de pagos, base de datos, etc. Potencia tus ventas con el método más dinámico y profesional. La mejor optimización y seguridad con certificado SSL."
+                    />
                   </p>
-                  <a  href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi E-Commerce ▶ ...podrían darme mas detalles?🤔" target="new" title="WhatsApp-Link-3"><button className="my-button"> Empezar</button></a>
+                  <a  href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi E-Commerce ▶ ...podrían darme mas detalles?🤔" target="new" title="WhatsApp-Link-3"><button className="my-button">
+                    <FormattedMessage
+                    id="precios.btn"
+                    defaultMessage="Empezar"
+                    />
+                    </button></a>
                 </div>
               </div>
             </div>
@@ -187,7 +260,15 @@ useEffect(() => {
                     style={{ fontSize: "1.3rem" }}
                     className="card-text mb-5 mb-lg-0 hosting h2 fs-2 text-black"
                   >
-                   Además desarrollamos tu web a medida <span style={{display:"flex"}} >pedí tu cotización!!</span> 
+                   <FormattedMessage
+                   id="precios.plus1"
+                   defaultMessage="Además desarrollamos tu web a medida "
+                   /><span style={{display:"flex"}} >
+                    <FormattedMessage
+                    id="precios.plus2"
+                    defaultMessage="pedí tu cotización!!"
+                    />
+                    </span> 
                   </p>
              
               <p  className="lead fw-normal text-muted mb-5 mb-lg-0">

@@ -3,16 +3,21 @@ import React,{ useEffect } from "react";
 import "./aboutus.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useState } from "react";
-import Axios from "axios";
+//import { useState } from "react";
+//import Axios from "axios";
+
+import {FormattedMessage} from 'react-intl';
+
 
 function AboutUs() {
+  
   //const[list, setList]=useState([]);
   useEffect(() => {
     Aos.init({ duration: 2000 });
-  /*  Axios({url: "http://localhost/EpsiWeb/api/contact/aboutus.php"})
+  /*Axios({url: "http://localhost/EpsiWeb/api/contact/aboutus.php"})
   .then((response)=>{
-    setList(response.data.aboutus[0]);
+    
+    setList(response.data.aboutus[1]);
     
   })
   .catch((error)=>{
@@ -26,10 +31,16 @@ function AboutUs() {
           <div className="row gx-5 align-items-center justify-content-center justify-content-lg-between">
             <div data-aos="fade-right" className=" col-sm-8 col-md-6 ">
               <h2 className="display-4 lh-1 mb-4">
-                {/*list.titulo1*/}dasdasd{" "}
+                <FormattedMessage
+                 id="aboutus.titulo1"
+                 defaultMessage="Somos EpsiWeb: Miramos hacia adelante."
+                />{" "}
               </h2>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                {/*list.parrafo1*/} fsdfsdf
+                <FormattedMessage
+                 id="aboutus.parrafo1"
+                 defaultMessage=" Queremos ayudarte a construir una versión distinta de tu emprendimiento, tenemos la experiencia formada en las diferentes tecnologías para ofrecerte el mejor servicio, de la forma más profesional."
+                />
               </p>
             </div>
             <div className="col-12 col-lg-5">
@@ -610,10 +621,16 @@ function AboutUs() {
             </div>
             <div data-aos="fade-left" className="col-sm-8 col-md-6">
               <h2 className="display-4 lh-1 mb-4">
-                {/*list.titulo2*/}dasdasd{" "}
+                <FormattedMessage
+                id="aboutus.titulo2"
+                defaultMessage="Queremos lograr que tengas los mejores resultados."
+                />{" "}
               </h2>
               <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                {/*list.parrafo2*/}dasdasd
+                <FormattedMessage
+                id="aboutus.parrafo2"
+                defaultMessage="Estamos informados de las ultimas tendencias en materia digital, evaluamos situaciones y asesoramos ante cualquier duda, nuestra garantía en la satisfacción y la buena experiencia."
+                />
               </p>
             </div>
           </div>

@@ -1,9 +1,11 @@
 import React from "react";
 import "./header.css";
-import Dev from "../../assets/img/Dev.png"
+import Dev from "../../assets/img/Dev.png";
 
-import Axios from "axios";
-import { useState } from "react";
+import {FormattedMessage} from 'react-intl';
+
+//import Axios from "axios";
+//import { useState } from "react";
 
 function Header() {
   //const[list, setList]=useState([]);
@@ -21,9 +23,17 @@ function Header() {
         <div className="row gx-5 align-items-center">
           <div className="col-lg-6 title-header">
             <div className="mb-5 mb-lg-0 text-center text-lg-start title-z">
-              <h1 className="display-1 lh-1 mb-3">{/*list.titulo*/}dasdasd</h1>
+              <h1 className="display-1 lh-1 mb-3">
+                <FormattedMessage
+                id="header.titulo"
+                defaultMessage="Queremos ayudarte con tu próximo sitio web"
+                />
+              </h1>
               <p   className="lead fw-normal  mb-5" >
-                {/*list.parrafo*/}sadasd
+                <FormattedMessage
+                id="header.parrafo"
+                defaultMessage="Cada usuario merece tener la mejor experiencia, desde cualquier dispositivo y con la mejor optimización."
+                />
               </p>
             </div>
           </div>

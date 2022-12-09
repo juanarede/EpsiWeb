@@ -5,8 +5,10 @@ import './mainsection.css'
 
 import Aos from 'aos'
 import "aos/dist/aos.css"
-import Axios from "axios";
-import { useState } from "react";
+//import Axios from "axios";
+//import { useState } from "react";
+
+import {FormattedMessage} from 'react-intl';
 
 function MainSection() {
  // const[list, setList]=useState([]);
@@ -36,18 +38,34 @@ function MainSection() {
                   <div className="col-md-6 mb-5">
                     <div className="text-center">
                       <i className="bi-phone icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">{/*list.titulo1*/}asdasd</h3>
+                      <h3 className="font-alt">
+                      <FormattedMessage
+                      id='mainsection.titulo1'
+                      defaultMessage='Diseño web Responsive'
+                      />
+                      </h3>
                       <p className="text-muted mb-0">
-                        {/*list.parrafo1*/}asdas
+                        <FormattedMessage
+                        id='mainsection.parrafo1'
+                        defaultMessage='Tu sitio web en cualquier dispositivo con la mejor optimización y calidad visual.'
+                        />
                       </p>
                     </div>
                   </div>
                   <div className="col-md-6 mb-5">
                     <div className="text-center">
                     <i class="bi bi-people-fill icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">{/*list.titulo2*/}sdasd</h3>
+                      <h3 className="font-alt">
+                        <FormattedMessage
+                        id='mainsection.titulo2'
+                        defaultMessage='Integración de Social Login'
+                        />
+                      </h3>
                       <p className="text-muted mb-0">
-                        {/*list.parrafo2*/}sdsadas
+                        <FormattedMessage
+                        id='mainsection.parrafo2'
+                        defaultMessage='Añadimos metodos de autenticación a tu sitio web, mediante las principales redes sociales.'
+                        />
                       </p>
                     </div>
                   </div>
@@ -57,9 +75,17 @@ function MainSection() {
                   <div className="col-md-6 mb-5 mb-md-0">
                     <div className="text-center">
                     <i class="bi bi-cash-coin icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">{/*list.titulo3*/}dasdas</h3>
+                      <h3 className="font-alt">
+                        <FormattedMessage
+                        id='mainsection.titulo3'
+                        defaultMessage='Plataformas de pagos'
+                        />
+                      </h3>
                       <p className="text-muted mb-0">
-                        {/*list.parrafo3*/}sadasd{" "}
+                        <FormattedMessage
+                        id='mainsection.parrafo3'
+                        defaultMessage='Incorporamos distintos metodos de pagos, ideal para los '
+                        />{" "}
                         <strong>e-commerce</strong>.
                       </p>
                     </div>
@@ -67,9 +93,17 @@ function MainSection() {
                   <div className="col-md-6">
                     <div className="text-center">
                     <i class="bi bi-graph-up icon-feature text-gradient d-block mb-3"></i>
-                      <h3 className="font-alt">{/*list.titulo4*/}dasdasd</h3>
+                      <h3 className="font-alt">
+                        <FormattedMessage
+                        id='mainsection.titulo4'
+                        defaultMessage='Posicionamiento SEO'
+                        />
+                      </h3>
                       <p className="text-muted mb-0">
-                        {/*list.parrafo4*/}dasdas{" "}
+                        <FormattedMessage
+                        id='mainsection.parrafo4'
+                        defaultMessage='Trabajamos con las principales reglas para poder alcanzar ese preciado primer lugar en el famoso motor de búsqueda '
+                        />{" "}
                         <strong>Google</strong>
                       </p>
                     </div>

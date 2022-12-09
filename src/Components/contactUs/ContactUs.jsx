@@ -3,8 +3,10 @@ import './contactus.css'
 
 import Aos from 'aos'
 import "aos/dist/aos.css"
-import { useState } from "react";
-import Axios from "axios";
+//import { useState } from "react";
+//import Axios from "axios";
+
+import {FormattedMessage} from 'react-intl';
 
 function ContactUs() {
  // const[list, setList]=useState([]);
@@ -29,11 +31,22 @@ function ContactUs() {
             <div className="cta-content">
                 <div data-aos="fade-right" className="container px-5">
                     <h2 className="text-white display-1 lh-1 mb-4">
-                    {/*list.titulo*/}asdasdas
+                    <FormattedMessage
+                     id='contact.titulo'
+                     defaultMessage="Mas información?"
+                    />
                         <br />
-                    {/*list.parrafo*/}dasdasd
+                    <FormattedMessage
+                    id='contact.parrafo'
+                    defaultMessage="No hay problema."
+                    />
                     </h2>
-                    <a className="btn btn-outline-light py-3 px-4 rounded-pill" href="#contact" title='Contact'>Contáctanos</a>
+                    <a className="btn btn-outline-light py-3 px-4 rounded-pill" href="#contact" title='Contact'>
+                      <FormattedMessage
+                      id='contact.btn'
+                      defaultMessage="Contáctanos"
+                      />
+                    </a>
                 </div>
             </div>
             </div>

@@ -1,10 +1,15 @@
 import { AppBar } from '@mui/material';
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';//Contexto y estado
 import logoWithe from '../../assets/img/logowithe.png'
 import './navbar.css'
 
 import espanaFlag from '../../assets/img/espanaflag.png'
 import ukFlag from '../../assets/img/ukflag.png'
+
+//Internacionalizacion
+import {FormattedMessage} from 'react-intl';
+import {langContext} from '../../context/langContext';
+
 
 
 
@@ -14,8 +19,10 @@ import ukFlag from '../../assets/img/ukflag.png'
 
 
 function Navbar() {
- 
 
+    const idioma = useContext(langContext);//Llamamos al contexto
+    console.log(idioma);
+    
     const [navbarScroll, setNavbarScroll] = useState(false);
 
 
@@ -49,8 +56,12 @@ const changeBackground = () => {
     <div className="container px-5">
        
         <a className="navbar-brand fw-bold" href="#page-top" title='Top-Page'><img className='logonav' src={logoWithe} alt="Logo" title='Logo'/></a>
-        <a className="navbar-brand fw-bold" href="#" title='Top-Page'><img  src={espanaFlag} alt="Logo" title='EspañaLogo'/></a>
-        <a className="navbar-brand fw-bold" href="#" title='Top-Page'><img  src={ukFlag} alt="Logo" title='UkLogo'/></a>
+        
+        {/*Botones Internazionalizacion*/}
+        <a className="navbar-brand fw-bold" onClick={()=>idioma.establecerLenguaje('es-AR')} href="#" title='Top-Page'><img  src={espanaFlag} alt="Logo-Es" title='EspañaLogo'/></a>
+        <a className="navbar-brand fw-bold" onClick={()=>idioma.establecerLenguaje('en-UK')} href="#" title='Top-Page'><img  src={ukFlag} alt="Logo-Uk" title='UkLogo'/></a>
+
+
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i className="bi-list"></i>
@@ -58,10 +69,30 @@ const changeBackground = () => {
         
         <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul  className=" navbar-nav ms-auto me-4 my-3 my-lg-0">
-                <li  className="nav-item"><a class="nav-link me-lg-3" href="#service" title='Service'>Servicios</a></li>
-                <li  className="nav-item"><a class="nav-link me-lg-3" href="#aboutus" title='About'>Quienes Somos</a></li>
-                <li  className="nav-item"><a class="nav-link me-lg-3" href="#precios" title='Price'>Diseño Web Precios</a></li>
-                <li style={{paddingTop:"0.3rem", marginLeft:"1rem" }}  className="nav-item"><a href="#contact" title='Contact'><button class="my-button" ><i class="bi bi-chat-dots"></i>Hablemos</button></a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3" href="#service" title='Service'>
+                  <FormattedMessage
+                    id="menu.service"
+                    defaultMessage="Servicios"       
+                  />
+                  </a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3" href="#aboutus" title='About'>
+                <FormattedMessage
+                    id="menu.about"
+                    defaultMessage="Quienes Somos"       
+                  />
+                  </a></li>
+                <li  className="nav-item"><a class="nav-link me-lg-3" href="#precios" title='Price'>
+                <FormattedMessage
+                    id="menu.price"
+                    defaultMessage="Diseño Web Precios"       
+                  />
+                  </a></li>
+                <li style={{paddingTop:"0.3rem", marginLeft:"1rem" }}  className="nav-item"><a href="#contact" title='Contact'><button class="my-button" ><i class="bi bi-chat-dots"></i>
+                <FormattedMessage
+                    id="menu.contact"
+                    defaultMessage="Hablemos"       
+                  />
+                </button></a></li>
                
                 
             </ul>
