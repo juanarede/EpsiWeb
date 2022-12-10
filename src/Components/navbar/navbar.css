@@ -1,6 +1,9 @@
 .logonav{
     width: 8rem;
 }
+.navegacion{
+    padding: 0;
+}
 #mainNav{
     z-index: 1000;
 }
