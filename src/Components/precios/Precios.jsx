@@ -114,7 +114,7 @@ useEffect(() => {
                   
                   <a href="https://api.whatsapp.com/send?phone=541132117480&text=Saludos!... Quisiera empezar mi Landing Page ▶ ...podrían darme mas detalles?🤔" target="new" title="WhatsApp-Link-1"><button style={{marginTop:"3rem"}} className="my-button">
                     <FormattedMessage
-                    id="precio.btn"
+                    id="precios.btn"
                     defaultMessage="Empezar"
                   /></button></a>
                   

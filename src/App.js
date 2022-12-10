@@ -5,7 +5,7 @@ import {langContext} from './context/langContext';
 
 
 
-import {IntlProvider} from 'react-intl';
+
 
 
 function App() {
