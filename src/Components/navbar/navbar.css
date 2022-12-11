@@ -2,7 +2,7 @@
     width: 8rem;
 }
 .navegacion{
-    padding: 0;
+    padding-right: 0;
 }
 #mainNav{
     z-index: 1000;
