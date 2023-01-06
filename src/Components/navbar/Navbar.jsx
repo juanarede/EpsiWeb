@@ -12,7 +12,7 @@ import { langContext } from "../../context/langContext";
 
 function Navbar() {
   const idioma = useContext(langContext); //Llamamos al contexto
-  console.log(idioma);
+  //console.log(idioma);
 
   const [navbarScroll, setNavbarScroll] = useState(false);
 
