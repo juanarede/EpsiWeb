@@ -37,6 +37,7 @@ const LangProvider = ({children}) =>{
         <langContext.Provider value={{establecerLenguaje: establecerLenguaje}}>
             <IntlProvider locale={locale} messages={mensajes}>{/*Ponemos el valor de los estados*/}
             {children}
+            
             </IntlProvider>
         </langContext.Provider>
     );
