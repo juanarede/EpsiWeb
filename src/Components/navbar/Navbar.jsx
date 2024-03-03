@@ -53,7 +53,7 @@ function Navbar() {
           <a
             className="navbar-brand fw-bold"
             onClick={() => idioma.establecerLenguaje("es-AR")}
-            href="#"
+            href="#ar"
             title="Top-Page"
           >
             <img src={espanaFlag} alt="Logo-Es" title="EspañaLogo" />
@@ -61,7 +61,7 @@ function Navbar() {
           <a
             className="navbar-brand fw-bold"
             onClick={() => idioma.establecerLenguaje("en-UK")}
-            href="#"
+            href="#uk"
             title="Top-Page"
           >
             <img src={ukFlag} alt="Logo-Uk" title="UkLogo" />
